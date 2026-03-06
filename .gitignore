@@ -2,9 +2,8 @@
 .Rhistory
 .RData
 .Ruserdata
-
-/.quarto/
-*_cache/
-/_site/
-
+*.Rproj
 .DS_Store
+/.quarto/
+/_book/
+.claude/

@@ -1,59 +1,46 @@
-project: 
-  type: website
-  
-website: 
-  page-navigation: true
-  title: "Making sharable documents with Quarto" 
-  site-url: "https://openscapes.github.io/quarto-website-tutorial" 
-  repo-url: https://github.com/openscapes/quarto-website-tutorial 
+project:
+  type: book
+
+book:
+  title: "Getting Started With Parkinson's Disease Data"
+  author:
+    - name: "Michael Alosco"
+      affiliation: "Boston University Chobanian & Avedisian School of Medicine"
+    - name: "Elizabeth Hutchins"
+      affiliation: "TGen/DataTecnica/NIH CARD"
+    - name: "Paula Saffie Awad"
+      affiliation: "CETRAM/Clinica Santa Maria"
+    - name: "Victoria Dardov"
+      affiliation: "Technome"
+    - name: "Joshua Gottesman"
+      affiliation: "The Michael J. Fox Foundation"
+    - name: "Hirotaka Iwaki"
+      affiliation: "NIH CARD/NIA/DataTecnica"
+    - name: "Paula Reyes-Perez"
+      affiliation: "UNAM"
+    - name: "Daniel Teixeira dos Santos"
+      affiliation: "Hospital de Clinicas de Porto Alegre"
+    - name: "Maya Sanghvi"
+      affiliation: "The Center for Scientific Collaboration and Community Engagement"
+  date: "2024-05-01"
+  version: "1.0"
+  repo-url: https://github.com/MJFF-ResearchCommunity/getting-started-PD-data
   repo-actions: [edit, issue]
-  
-  page-footer:
-    right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
-    left: "&copy; CC-By Openscapes, 2024"
-    
-  sidebar:
-    logo: "images/openscapes_hex.png"
-    pinned: true
-    align: center
-    tools: 
-      - icon: globe
-        href: https://openscapes.org
-        text: "Openscapes.org"
-      - icon: github
-        href: https://github.com/openscapes/quarto-website-tutorial
-        text: "Quarto website tutorial"
-      - icon: twitter
-        href: https://twitter.com/openscapes
-        text: "Openscapes Twitter"         
-
-    style: "docked"
-    search: true
-    collapse-level: 1
-    contents:
-      - href: index.qmd
-        text: Welcome
-      - explore.qmd
-      - section: quarto-workflows/index.qmd
-        contents: 
-          - quarto-workflows/browser.md
-          - quarto-workflows/rstudio.qmd
-          - quarto-workflows/jupyter.md 
-      - learning-more.qmd
-      - href: transition-from-rmarkdown.qmd
-        text: Transition from Rmd
-
+  chapters:
+    - index.qmd
+    - overview.qmd
+    - amp-pd.qmd
+    - ppmi.qmd
+    - gp2.qmd
+    - fox-insight.qmd
+    - references.qmd
 
 format:
   html:
     theme: cosmo
-    code-copy: true
-    code-overflow: wrap
+    css: styles.css
     toc: true
-
-
-filters:
-  - include-files.lua
-  - quarto
-
-  
+    toc-depth: 3
+    number-sections: true
+    link-external-icon: true
+    link-external-newwindow: true

@@ -1,0 +1,160 @@
+# FOX INSIGHT {#sec-fox-insight}
+
+## Study Description {#sec-fox-insight-description}
+
+The following is obtained from the [Fox Insight website](https://foxinsight.michaeljfox.org/):
+
+> "Fox Insight is a dynamic online longitudinal clinical study of people both with and without Parkinson's disease. The study seeks to enroll tens of thousands of diverse participants, making Fox Insight the largest and most representative Parkinson's research study to date. The Fox Insight platform deploys a variety of health, lifestyle, and Parkinson's routine assessments. Fox Insight is sponsored by The Michael J. Fox Foundation for Parkinson's Research."
+
+### Study Population
+
+Fox Insight includes individuals who are 18 years or older. Participants complete online surveys that assess:
+
+- Neurological history
+- Motor and non-motor symptoms
+- Quality of life
+- Environmental exposures
+- Other types of outcomes
+
+It includes both cross-sectional and longitudinal assessments. See the [assessments and timeline of scheduled activities PDF](https://foxinsight.michaeljfox.org/assessments) for additional details.
+
+### Key Publication
+
+::: {.callout-tip}
+## In-Depth Overview
+The publication "[Fox Insight collects online, longitudinal patient-reported outcomes and genetic data on Parkinson's disease](https://doi.org/10.1038/s41597-020-0401-2)" provides an in-depth overview of Fox Insight. Check it out for additional information.
+:::
+
+## Study Data Features {#sec-fox-insight-features}
+
+### Clinical Data
+
+- **Demographics**
+- **Neurological history** (e.g., PD diagnosis, disease onset)
+- **Health and medical history**
+- **Family history**
+- **Cognition and daily living activities**
+- **Motor symptoms** including MDS-UPDRS
+- **Emotional functioning**
+- **Environmental exposures**
+- **Substance use**
+- **Traumatic brain injury and repetitive head impact histories**
+- **Physical activity and sleep**
+- **Height and weight**
+- **Occupation**
+- **Factors related to social determinants of health**
+
+### Genetic Data
+
+- 23andMe saliva collection kit for genotyping on a variety of platforms:
+  - V3 platform
+  - V4 platform
+  - V5 platform
+- Genetic variants available in data set include those located near:
+  - GBA
+  - LRRK2
+  - APOE
+  - PRKN
+  - MCCC1
+  - BIN3
+  - HLA locus
+
+### Other Data Types
+
+There is no neuroimaging or other biomarker data linked to the data set.
+
+## How to Access Data {#sec-fox-insight-access}
+
+Data is available to qualified researchers who have agreed to the data use agreement and publication policy. Access to Fox Insight data is available at no cost.
+
+::: {.callout-note}
+## Getting Started
+The [Getting Started with Fox DEN, a Parkinson's Data Platform](https://foxden.michaeljfox.org/getting-started) video discusses how to get started.
+:::
+
+### Data Access Options
+
+Data can be downloaded from the [variable explorer](https://foxden.michaeljfox.org/variable-explorer) where users can:
+
+- **Custom export**: Select specific variables of interest for a custom export
+- **Monthly data cut**: Download the latest version of the full dataset (login required)
+
+## Intended Data Uses {#sec-fox-insight-uses}
+
+All data is collected remotely, online and data is reported by patients/participants. This format allows for large scale collection of data to address ongoing knowledge gaps in PD including:
+
+- Need for large sample sizes
+- Longitudinal follow up
+
+The study type might also help to improve access to people and communities not represented in clinic or in person studies. The overall goal is to better understand the risk factors, clinical symptoms, and experiences of people with and/or at risk for PD.
+
+## Data Set Strengths {#sec-fox-insight-strengths}
+
+1. **Large sample sizes** with a range of data collected on a sample enriched for having PD, allowing for detailed investigations on risk factors and clinical presentation for PD.
+
+2. **Longitudinal data** including monitoring for 60 months. There are regular intervals of follow up (3 month increments, depending on the questionnaire) allowing for assessment of serial change and trajectories.
+
+3. **Evolving data set** and monthly data cuts provided by Fox DEN.
+
+4. **Comparison group available** - The sample is enriched for patients with PD or at risk for PD, but there is an available comparison group of non-PD controls.
+
+## Data Set Limitations {#sec-fox-insight-limitations}
+
+1. **All data is self-reported** (with the exception of the FIVE sub-study data, which only a small number of participants with PD joined from the overall cohort), which may result in:
+   - Unsupervised completion of assessments
+   - Missing data
+   - Limitations to generalizability
+
+2. **No genotyping for study participants without PD**
+
+## Pre-Existing Documentation/FAQs {#sec-fox-insight-docs}
+
+The Fox Insight ['resources' section](https://foxden.michaeljfox.org/resources) includes several potentially useful items including:
+
+1. **Data Dictionary** (machine-readable)
+2. **Annotated Data Dictionary** (human-readable)
+3. **Time Representation in Fox DEN** (helpful for longitudinal analysis)
+
+::: {.callout-tip}
+## Quick-Start Guide
+The annotated data dictionary, in particular, contains an introduction and quick-start guide that provides users with a basic overview of how to understand Fox Insight data and proposed approaches to common researcher questions.
+:::
+
+### Additional Resources
+
+- [Fox Insight FAQs](https://foxinsight.michaeljfox.org/faqs) (scroll to end of the linked page)
+- **Study data inbox**: [foxden@michaeljfox.org](mailto:foxden@michaeljfox.org)
+
+## Tips and Dataset Considerations {#sec-fox-insight-tips}
+
+### Visit Window Changes
+
+Visit windows initially did not have a buffer between them, so during the earliest period of data collection, participants could have their visit window close on 1/15 and then a new one open on 1/16.
+
+::: {.callout-note}
+## Visit Window Update
+To address this issue, a 30-day window between study visit close date and the opening of the next visit was instituted on 09/05/2019.
+:::
+
+### Complex Schedule of Activities
+
+There is a complex schedule of activities that needs to be reviewed closely so that the user has a clear understanding of when each assessment was administered, including those that have only one assessment. Depending on the scientific question and data to be used, there might be a need to select data around a certain visit.
+
+### Beta Group Participants
+
+Approximately 8% of total participants as of 03-01-23 were part of Fox Insight's beta group, defined as those joining before the March 2017 soft launch of Fox Insight.
+
+::: {.callout-warning}
+## Beta Period Data Availability
+Data collected during the beta period (defined as July 2014 to February 2017) could be subject to questionnaire versioning and inconsistencies associated with platform troubleshooting and optimization. Because of this, data collected during this time is not publicly available.
+
+However, data collected from participants who enrolled during this time but continued on to contribute data following March 2017 **are** publicly available.
+:::
+
+### Related Publications
+
+A [data descriptor manuscript](https://doi.org/10.1038/s41597-020-0401-2) was published in 2020 and provides additional detail on the Fox Insight study and its data. An updated version of this paper is currently under review.
+
+## Updates {#sec-fox-insight-updates}
+
+The Fox Insight database is updated monthly at the beginning of each month with newly collected study data.

@@ -1,0 +1,216 @@
+# PPMI {#sec-ppmi}
+
+## Study Description {#sec-ppmi-description}
+
+PPMI is a longitudinal cohort that evaluates a variety of clinical, genomics, transcriptomics, proteomics, biomarkers, and neuroimaging data from three different patient cohorts:
+
+1. Parkinson's disease patients
+2. Patients with prodromal symptoms of high penetrance genetic mutations associated with the disease
+3. Healthy individuals
+
+Patients are expected to have at least 5 years of follow-up.
+
+### PPMI Studies
+
+PPMI actually encompasses various studies:
+
+- **PPMI Clinical** - intensive in-person longitudinal evaluations of various cohorts
+- **PPMI Remote** - remote study activities using smell tests, genotyping, and digital sensor technologies
+- **PPMI Online** - online evaluations with patient-reported outcomes
+
+Patients can overlap between the three studies. Each study aims for a specific number of participants:
+
+- PPMI Clinical: 4,000
+- PPMI Remote: 40,000
+- PPMI Online: 100,000
+
+### Data Dashboard
+
+For an overview of study participant demographics and data collection time points, users may refer to the [data dashboard](https://www.ppmi-info.org/data-dashboard). This provides a limited set of characteristics, including the ability to filter by cohort, to review number of participants per visit, biological sex, ethnicity, and age.
+
+### Cohort Definitions
+
+::: {.callout-important}
+## Consensus Committee Classification
+Currently, patients in the PPMI Clinical cohort are defined by a consensus committee. This means that even though some patients may have been enrolled in a specific cohort, their classification could shift longitudinally, and they may now be categorized differently, or excluded for various reasons.
+:::
+
+This has resulted in roughly 2,000 combined PD and Prodromal PD participants, along with roughly 250 Health Controls (but depending on criteria for inclusion in your analysis, your figures may vary).
+
+According to the latest update from the consensus committee in May 2023, the number of participants correctly defined in the main study cohorts is:
+
+- **PD** (diagnosis by clinical criteria + DaTscan compatible with PD): 1,104
+- **Prodromal PD** (either genetic, hyposmia or RBD - can overlap): 882
+- **Healthy Controls**: 253
+
+## Study Data Features {#sec-ppmi-features}
+
+### Clinical Data
+
+- Demographics
+- Family history
+- Medical history
+- Medication history
+- Neurological exam
+- MDS-UPDRS (Parts I, II, III and IV)
+- Hoehn & Yahr scale
+- Modified Schwab & England Activities of Daily Living
+- SCOPA-AUT
+- Geriatric Depression Scale (Short Version)
+- QUIP-Current-Short
+- State-Trait Anxiety Inventory
+- Montreal Cognitive Assessment (MoCA)
+- Neurobehavioral and neuropsychological tests (various)
+- University of Pennsylvania Smell Identification Test (UPSIT)
+- Epworth Sleepiness Scale
+- REM Sleep Behavior Disorder Questionnaire
+
+### Neuroimaging
+
+- DaTSCAN (imaging and volumetry)
+- DTI (imaging and volumetry)
+- MRI (imaging)
+- PET (substudies)
+
+### Omics
+
+- Genetic status related to the most common monogenic PD causes
+- NeuroX SNP data
+- Immunochip SNP data
+- Illumina NeuroBooster SNP data
+- Whole exome sequencing
+- Whole genome sequencing
+- Blood Transcriptomics (RNAseq)
+- Proteomics
+- Metabolomics
+
+### Biomarkers
+
+Various biomarkers exist, but some of the most relevant are:
+
+- CSF alpha-synuclein, amyloid-beta42, p-tau181 and total tau
+- CSF alpha-synuclein seed amplification assay (SAA)
+- Serum neurofilament light polypeptide (NfL)
+
+### Other
+
+- Neuropathology results
+
+## How to Access Data {#sec-ppmi-access}
+
+Access to PPMI is provided free of charge and data to be analyzed needs to be downloaded.
+
+::: {.callout-note}
+## Simple Access Process
+Gaining access to PPMI data is a straightforward process.
+:::
+
+1. Visit the [main study site](https://www.ppmi-info.org/)
+2. Click the "Access data" option at the top left
+3. Apply for data access, providing:
+   - Personal information
+   - Detailed motivations for your intended analyses
+   - Agreement with data usage terms
+4. The study committee will review your request and respond within a week
+5. Once access is granted, log in to access the data
+
+There is also a [Data User Guide](https://www.ppmi-info.org/data-user-guide) with detailed information.
+
+## Intended Data Uses {#sec-ppmi-uses}
+
+PPMI's primary goals are to:
+
+- Identify PD biomarkers
+- Compare clinical and non-clinical progression between different cohorts, including:
+  - Individuals diagnosed with PD
+  - Genetic mutations
+  - Prodromal symptoms
+  - Healthy participants
+
+## Data Set Strengths {#sec-ppmi-strengths}
+
+1. **Evolving dataset** - currently recruiting patients and stores biological material in order for interested researchers to propose additional projects and analyses
+
+2. **Great range of available data** - relevant evaluations, omics and neuroimaging data on a wide range of clinical and non-clinical information
+
+3. **Longitudinal followup** - provides an opportunity to study disease progression
+
+4. **Multicenter** - at least 50 different centers from North America, Europe, the Middle East and Africa contribute patients to the study
+
+5. **Early stage patients** - patients enter the study in early stages and not using PD medications, making it possible to evaluate baseline and some follow-up progression of the disease without medication confounders
+
+## Data Set Limitations {#sec-ppmi-limitations}
+
+1. Relatively low number of patients for some genetic analyses that require a large number of individuals (such as GWAS)
+
+2. Underrepresentation of non-European ancestry populations
+
+## Pre-Existing Documentation/FAQs {#sec-ppmi-docs}
+
+### Available on PPMI Website (no login required)
+
+For data users, there is a [Data User Guide](https://www.ppmi-info.org/data-user-guide) which is a great place to start developing an understanding of PPMI study data – its background, its use, and how to access it.
+
+The PPMI website also contains useful information including:
+
+- Study protocol
+- Schedule of activities
+- Operations manual
+- Biological data acquisition manual
+- Pathology data acquisition manual
+- Genetic data processing manual
+- Acquisition protocols for MRI, DTI, and SPECT
+
+**Additional Resources:**
+
+- [Ongoing Specimen Analysis](https://www.ppmi-info.org/ongoing-specimen-analysis) - lists ongoing or completed projects and indicates if their results are publicly available
+- [Specimen Dashboard](https://www.ppmi-info.org/specimen-dashboard) - listing all biospecimens
+- [PPMI Study FAQs](https://www.ppmi-info.org/faqs) - answers to frequently asked questions study-wide
+
+### Available on LONI Platform (requires login)
+
+After logging in to [LONI](https://ida.loni.usc.edu/), select "Download" at the top of the home screen, and choose "Study Data." Here, you'll find files to guide you in using PPMI data, including:
+
+1. **Consensus Committee Analytic Dataset** - an extremely important database that must be used to officially determine to which cohort each patient belongs. Specifically, every definition of the group to which a patient belongs comes from this database.
+
+2. **PPMI Analytic Dataset Guide** - a document that explains why the above document was created to define cohorts of patients and how to use it.
+
+3. **PPMI Data User Guide** - a document that provides an introduction and serves as a reference for explaining how to interpret certain variables and conduct some analyses.
+
+In the "Study Docs" tab, you'll also find the **Code List** and **Data Dictionary**, which provide meanings for each column name and their values.
+
+**Study Contact:**
+
+- [Contact Form](https://www.ppmi-info.org/contact/contact_us)
+- Email: [ppmi@michaeljfox.org](mailto:ppmi@michaeljfox.org)
+
+## Tips and Dataset Considerations {#sec-ppmi-tips}
+
+::: {.callout-warning}
+## Critical: Consensus Committee Dataset
+Cohort definitions are not those originally present and downloaded inside the study's platform (LONI), but instead defined by a separate document (consensus committee analytic dataset) found inside the platform (as explained above).
+:::
+
+### Biomarker and Omics Data
+
+Much of biomarker and omics data from the study comes from proposed projects. It is important to carefully read each project's documentation in order to better understand the structure and methods that were employed in the data of your interest. An overview of these projects can be found in [Ongoing Specimen Analysis](https://www.ppmi-info.org/ongoing-specimen-analysis) and the methodology for each one, inside LONI.
+
+### Duplicate Entries - PDSTATE Variable
+
+Some participants have duplicate entries for the same study visit that are dependent upon the participant's last dose of dopaminergic therapy (DT), which is defined as levodopa and/or dopamine agonists. The variable that determines this is called **"PDSTATE"** and is present in the MDS-UPDRS III questionnaire.
+
+- **OFF state**: defined in the PPMI protocol as more than 6 hours after the last dose of DT
+- **ON state**: approximately one hour after the last dose of DT
+
+### Screening vs. Baseline Visits
+
+There is a screening visit and a baseline visit - occasionally there is a datapoint that was taken at one or the other, so it is worth checking both visits. For example, blood cell counts were taken at the screening visit and not the baseline visit, and then at subsequent yearly visits.
+
+## Updates {#sec-ppmi-updates}
+
+The study data updates regularly monthly as new participants are enrolled and participants already in follow-up attend study visits.
+
+- **Clinical database entries**: transferred nightly to the database
+- **Complete database update**: conducted each Sunday
+- **Imaging data**: integrated into the database separately, on a monthly basis
+- **Biomarker/omics projects**: new specific updates are added depending on the conclusion of proposed projects that analyze patients' biological and neuroimaging data
