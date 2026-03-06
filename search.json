@@ -1,0 +1,622 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Getting Started With Parkinson’s Disease Data",
+    "section": "",
+    "text": "Welcome",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#getting-started-with-parkinsons-disease-data",
+    "href": "index.html#getting-started-with-parkinsons-disease-data",
+    "title": "Getting Started With Parkinson’s Disease Data",
+    "section": "Getting Started With Parkinson’s Disease Data",
+    "text": "Getting Started With Parkinson’s Disease Data\nWelcome to the Getting Started With Parkinson’s Disease Data guide! This comprehensive resource is designed to help researchers navigate and access major Parkinson’s disease research datasets with ease.",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#purpose",
+    "href": "index.html#purpose",
+    "title": "Getting Started With Parkinson’s Disease Data",
+    "section": "Purpose",
+    "text": "Purpose\nDon’t Panic! This guide is intended to be a living document which enables researchers getting started with an array of datasets pertaining to PD research to do so with increased ease. The current draft contains information on four datasets:\n\nAMP PD - Accelerating Medicines Partnership Parkinson’s Disease\nPPMI - Parkinson’s Progression Markers Initiative\nGP2 - Global Parkinson’s Genetics Program\nFOX INSIGHT - Online longitudinal clinical study",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#whats-inside",
+    "href": "index.html#whats-inside",
+    "title": "Getting Started With Parkinson’s Disease Data",
+    "section": "What’s Inside",
+    "text": "What’s Inside\nEach dataset entry contains an overview of the following aspects:\n\nStudy Description - Background and scope of the dataset\nStudy Data Features - Types of data available (clinical, genomic, imaging, etc.)\nHow to Access Data - Step-by-step instructions for gaining access\nIntended Data Uses - Primary research goals and applications\nData Set Strengths - Key advantages and unique features\nData Set Limitations - Important constraints to consider\nPre-Existing Documentation/FAQs - Links to additional resources\nTips and Dataset Considerations - Practical advice for working with the data\nUpdates - Information on data refresh schedules",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#at-a-glance-comparison",
+    "href": "index.html#at-a-glance-comparison",
+    "title": "Getting Started With Parkinson’s Disease Data",
+    "section": "At-a-Glance Comparison",
+    "text": "At-a-Glance Comparison\nThe guide provides a comprehensive metatable enabling researchers to quickly gain insight as to which dataset might be worth exploring further to determine what data best fits their research purpose. The comparison includes:\n\nOverview of cohort sizes\nTypes of analyses supported\nModalities of data available\nTypes of clinical features present",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#how-to-use-this-guide",
+    "href": "index.html#how-to-use-this-guide",
+    "title": "Getting Started With Parkinson’s Disease Data",
+    "section": "How to Use This Guide",
+    "text": "How to Use This Guide\n\nStart with the Overview to compare datasets at a glance\nDive into individual dataset chapters for detailed information\nFollow the access instructions to request data\nRefer to the Additional Resources for more information",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#contributing",
+    "href": "index.html#contributing",
+    "title": "Getting Started With Parkinson’s Disease Data",
+    "section": "Contributing",
+    "text": "Contributing\nIf you are interested in contributing an entry on a new study, or to request an update or correction, please contact: researchcommunity@michaeljfox.org",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#acknowledgements",
+    "href": "index.html#acknowledgements",
+    "title": "Getting Started With Parkinson’s Disease Data",
+    "section": "Acknowledgements",
+    "text": "Acknowledgements\nThis guide is created by the Data Community of Practice and powered by The Michael J. Fox Foundation for Parkinson’s Research.\n\n\n\n\n\n\nNoteVersion Information\n\n\n\nVersion 1.0 - May 2024\nThis is a living document and will be updated regularly as new information becomes available and datasets evolve.",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "overview.html",
+    "href": "overview.html",
+    "title": "1  Dataset Overview",
+    "section": "",
+    "text": "1.1 Metatable of Study Characteristics\nThis section provides a comprehensive comparison of the four major Parkinson’s disease datasets covered in this guide. Use these tables to quickly determine which dataset best suits your research question.\nThis table enables researchers to determine which data best suits their research question of interest. It provides an overview of the types of analyses supported, sizes of the respective cohorts, modalities of data available, and the clinical features each study covers.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Dataset Overview</span>"
+    ]
+  },
+  {
+    "objectID": "overview.html#metatable-of-study-characteristics",
+    "href": "overview.html#metatable-of-study-characteristics",
+    "title": "1  Dataset Overview",
+    "section": "",
+    "text": "NoteData Currency\n\n\n\nThese data are accurate as of April 2024.\n\n\n\n1.1.1 Types of Analyses Supported\n\n\n\n\n\n\n\n\n\n\nAnalysis Type\nPPMI (Clinic)\nAMP PD (Aggregated)\nGP2\nFOX INSIGHT\n\n\n\n\nPolygenic risk score generation\nYes\nYes\nYes\nYes\n\n\nGenome-wide association studies\nYes\nNo (only WGS or GWAS w/federated GP2 data)\nYes\n-\n\n\nCross-sectional\nYes\nYes\nYes\nYes\n\n\nLongitudinal\nYes\nYes\nNo\nYes\n\n\n\n\n\n1.1.2 Cohort Sizes\n\n\n\n\n\n\n\n\n\n\nPopulation\nPPMI\nAMP PD\nGP2\nFOX INSIGHT\n\n\n\n\nPD\n1,521(902 PD, 619 prodromal)\n3,375\n24,709 (genotyped)2,324 (WGS)\n38,635(10,669 genotyped + 419 microbiome)\n\n\nNon-PD\n237\n7,100\n17,246 (genotyped)17,246 (WGS)\n16,168\n\n\n\n\n\n1.1.3 Modalities of Data\n\n\n\n\n\n\n\n\n\n\nData Type\nPPMI\nAMP PD\nGP2\nFOX INSIGHT\n\n\n\n\nGenetic data\nYes\nYes\nYes\nYes\n\n\nBiologic data\nYes\nYes\nNo\nNo\n\n\nImaging data\nYes\nNo\nNo\nNo\n\n\nPatient-reported outcome data\nYes (via PPMI-Online)\nNo\nNo\nYes\n\n\nMicrobiome data (stool)\nYes\nNo\nNo\nYes\n\n\n\n\n\n1.1.4 Types of Clinical Data Present\n\n\n\nClinical Feature\nPPMI\nAMP PD\nGP2\nFOX INSIGHT\n\n\n\n\nMotor\nYes\nYes\nYes\nYes\n\n\nNon-Motor\nYes\nYes\nYes\nYes\n\n\nQuality of Life\nNo\nYes\nSome\nYes\n\n\nCognition\nYes\nYes\nYes\nYes",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Dataset Overview</span>"
+    ]
+  },
+  {
+    "objectID": "overview.html#dataset-features-visualization",
+    "href": "overview.html#dataset-features-visualization",
+    "title": "1  Dataset Overview",
+    "section": "1.2 Dataset Features Visualization",
+    "text": "1.2 Dataset Features Visualization\nThe following graphic provides a visual overview of clinical and omics features across different datasets in relation to number of different features and dataset sample size.\n\nSolid-filled bubbles correspond to datasets that possess longitudinal data\nGradient-filled bubbles correspond to datasets only with cross-sectional data\n\n\n\n\n\n\n\nFigure 1.1: Dataset features comparison showing the relationship between number of features and sample size across the four datasets",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Dataset Overview</span>"
+    ]
+  },
+  {
+    "objectID": "overview.html#choosing-the-right-dataset",
+    "href": "overview.html#choosing-the-right-dataset",
+    "title": "1  Dataset Overview",
+    "section": "1.3 Choosing the Right Dataset",
+    "text": "1.3 Choosing the Right Dataset\nWhen selecting a dataset for your research, consider:\n\nResearch Question - Does your question require longitudinal data, imaging, or specific biomarkers?\nSample Size - Do you need large cohorts for genetic studies or smaller, well-characterized cohorts?\nData Modalities - What types of data (clinical, genetic, imaging, etc.) does your analysis require?\nPopulation Diversity - Does your research benefit from diverse ancestries (GP2) or specific cohorts?\nAccess Requirements - What are the time and resource constraints for data access?",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Dataset Overview</span>"
+    ]
+  },
+  {
+    "objectID": "overview.html#next-steps",
+    "href": "overview.html#next-steps",
+    "title": "1  Dataset Overview",
+    "section": "1.4 Next Steps",
+    "text": "1.4 Next Steps\nExplore the detailed chapters for each dataset:\n\nAMP PD - Harmonized multi-cohort dataset with proteomics and transcriptomics\nPPMI - Longitudinal cohort with comprehensive neuroimaging\nGP2 - Large-scale genetics program with diverse populations\nFOX INSIGHT - Online longitudinal study with patient-reported outcomes",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Dataset Overview</span>"
+    ]
+  },
+  {
+    "objectID": "amp-pd.html",
+    "href": "amp-pd.html",
+    "title": "2  AMP® PD",
+    "section": "",
+    "text": "2.1 Study Description\nAMP® PD (the Accelerating Medicines Partnership Parkinson’s Disease) program is a partnership between FNIH, NINDS, NIA, FDA, Abbvie, GSK, Pfizer, Sanofi, BMS, Verily, ASAP and MJFF that generates and consolidates data from eight unified cohorts (BioFIND, HBS, LBD, LCC, PDBP, PPMI, STEADY-PD3 and SURE-PD3).\nData was generated using standardized technology and centrally harmonized and quality controlled. All data was generated from samples collected under similar protocols. This data harmonization process and single data use policy facilitates and simplifies cross-cohort analysis.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>AMP® PD</span>"
+    ]
+  },
+  {
+    "objectID": "amp-pd.html#sec-amp-pd-description",
+    "href": "amp-pd.html#sec-amp-pd-description",
+    "title": "2  AMP® PD",
+    "section": "",
+    "text": "TipData Harmonization\n\n\n\nFor more information on the data harmonization process, visit the data tab of the AMP-PD website.\n\n\n\n2.1.1 Summary Data Dashboard\nAMP-PD’s Summary Data Dashboard gives an overview of the various cohorts and provides an interactive way for users to see total participant counts for each of the cohorts of interest and what data types are available for the various cohorts. Using this dashboard, users can see there are 1,608 total participants from PDBP and 1,977 total participants from PPMI.\n\n\n2.1.2 Participant Categories\nAll samples are categorized into various PD categories. Here are the total number of participants with whole genome sequencing (WGS):\n\n\n\nEnrollment Type\nWGS Totals\n\n\n\n\nPD with Known Mutations\n1,483\n\n\nPD with No Known Mutations\n1,892\n\n\nHealthy Control with Known Mutations\n1,640\n\n\nHealthy Control with No Known Mutations\n2,554\n\n\nOther Diagnosis with Known Mutations\n1,490\n\n\nOther Diagnosis with No Known Mutation\n1,416",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>AMP® PD</span>"
+    ]
+  },
+  {
+    "objectID": "amp-pd.html#sec-amp-pd-features",
+    "href": "amp-pd.html#sec-amp-pd-features",
+    "title": "2  AMP® PD",
+    "section": "2.2 Study Data Features",
+    "text": "2.2 Study Data Features\n\n2.2.1 AMP-PD Harmonized Data\nClinical Data/Measurements\n\nClinical Data\n\nDemographic\nEnrollment\nMedical History\nMDS-UPDRS\nMoCA\nUPSIT\n\n\nTranscriptomic Data\n\nRNASeq from whole blood\nIllumina Novaseq sequencing\nGencode v29 reference\n\nGenomic Data\n\nWhole Genome Sequencing from whole blood\nIllumina XTen sequencing\nHuman Genome hg38 reference\n\nProteomic Data\n\nProteomics from CSF and plasma\nOlink Explore targeted proteomics analysis\nMass Spectrometry based Untargeted proteomics\n\nSingle Nucleus Brain Data\n\nClinical Data\nWhole Genome Sequencing\nSingle nucleus RNA sequencing from 5 brain regions",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>AMP® PD</span>"
+    ]
+  },
+  {
+    "objectID": "amp-pd.html#sec-amp-pd-access",
+    "href": "amp-pd.html#sec-amp-pd-access",
+    "title": "2  AMP® PD",
+    "section": "2.3 How to Access Data",
+    "text": "2.3 How to Access Data\n\n\n\n\n\n\nImportantAccess Requirements\n\n\n\nUsers are encouraged to utilize cloud-based analyses to analyze the available data. With Terra on the frontend and Google Cloud Services (GCS) on the backend, users can utilize Terra workspaces as examples to build their own analysis scripts in R or Python.\n\n\n\n2.3.1 Step-by-Step Access Process\n\nAMP PD Access Request Form\nSetting up a Google Account\nSetting up 2-Step Verification\nRequirements for accessing genomics data\nFull AMP PD Application Submission and Review Process",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>AMP® PD</span>"
+    ]
+  },
+  {
+    "objectID": "amp-pd.html#sec-amp-pd-uses",
+    "href": "amp-pd.html#sec-amp-pd-uses",
+    "title": "2  AMP® PD",
+    "section": "2.4 Intended Data Uses",
+    "text": "2.4 Intended Data Uses\nAMP PD aims to identify and validate diagnostic, prognostic, and progression biomarkers, with the goal of improving clinical trial design and contributing to the identification of new pathways for therapeutic developments.\nWith the many types of clinical and genetic data standardized across multiple cohorts, including longitudinal data, this is a great resource for:\n\nCombining different data types\nLeveraging thousands of data points\nValidating hypotheses across cohorts",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>AMP® PD</span>"
+    ]
+  },
+  {
+    "objectID": "amp-pd.html#sec-amp-pd-strengths",
+    "href": "amp-pd.html#sec-amp-pd-strengths",
+    "title": "2  AMP® PD",
+    "section": "2.5 Data Set Strengths",
+    "text": "2.5 Data Set Strengths\n\nData harmonization and standardization across multiple, well characterized cohorts - large sample sizes with a reduction in batch effects\nStandardized assays on thousands of existing biosamples, incorporating existing longitudinal clinical data\nMultiple data types paired with clinical data, including transcriptomics, proteomics, whole genome sequencing, and post-mortem tissue sequencing. All of this can lend itself to powerful analyses for researchers.\nLongitudinal data - AMP PD proteomic, transcriptomic, post-mortem sequencing, and clinical data contains longitudinal data, so scientists can use this data to do more complex time course analyses.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>AMP® PD</span>"
+    ]
+  },
+  {
+    "objectID": "amp-pd.html#sec-amp-pd-limitations",
+    "href": "amp-pd.html#sec-amp-pd-limitations",
+    "title": "2  AMP® PD",
+    "section": "2.6 Data Set Limitations",
+    "text": "2.6 Data Set Limitations\n\nNot all samples that have clinical data and WGS data have transcriptomics or proteomics data; there is a global inventory table that will highlight overlapping participant IDs across the data types",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>AMP® PD</span>"
+    ]
+  },
+  {
+    "objectID": "amp-pd.html#sec-amp-pd-docs",
+    "href": "amp-pd.html#sec-amp-pd-docs",
+    "title": "2  AMP® PD",
+    "section": "2.7 Pre-Existing Documentation/FAQs",
+    "text": "2.7 Pre-Existing Documentation/FAQs\n\nAMP-PD Website\nAMP-PD in Terra\nAMP-PD FAQs\nStudy Contact: ACT@amp-pd.org",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>AMP® PD</span>"
+    ]
+  },
+  {
+    "objectID": "amp-pd.html#sec-amp-pd-tips",
+    "href": "amp-pd.html#sec-amp-pd-tips",
+    "title": "2  AMP® PD",
+    "section": "2.8 Tips and Dataset Considerations",
+    "text": "2.8 Tips and Dataset Considerations\n\n\n\n\n\n\nTipWorking with AMP-PD Data\n\n\n\nThis data set is harmonized with example cloud-based notebooks to help get users started. The backend is GCS and users are able to download the data directly using the requester pays bucket. However, because the intended use is for users to use the data through Terra, it is a bit difficult to navigate directly to GCS and download the data.\n\n\n\n2.8.1 Why Access Data Through AMP-PD?\nYou might ask yourself - why access data through AMP-PD when I can go directly to a specific cohort data set, such as PPMI data from LONI?\nAnswer: AMP PD is a harmonized data set consisting of unified cohorts. What does this mean for a researcher? There are higher numbers of samples, because the cohorts are unified and harmonized into a cohesive data set for each omics type.\nYes, researchers can directly get data from one cohort, but if you want to use data from multiple cohorts to increase the number of samples in your analysis, AMP PD data would be a good way to do that.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>AMP® PD</span>"
+    ]
+  },
+  {
+    "objectID": "amp-pd.html#sec-amp-pd-updates",
+    "href": "amp-pd.html#sec-amp-pd-updates",
+    "title": "2  AMP® PD",
+    "section": "2.9 Updates",
+    "text": "2.9 Updates\nThe AMP-PD news and updates tab includes release notes for recent releases.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>AMP® PD</span>"
+    ]
+  },
+  {
+    "objectID": "ppmi.html",
+    "href": "ppmi.html",
+    "title": "3  PPMI",
+    "section": "",
+    "text": "3.1 Study Description\nPPMI is a longitudinal cohort that evaluates a variety of clinical, genomics, transcriptomics, proteomics, biomarkers, and neuroimaging data from three different patient cohorts:\nPatients are expected to have at least 5 years of follow-up.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>PPMI</span>"
+    ]
+  },
+  {
+    "objectID": "ppmi.html#sec-ppmi-description",
+    "href": "ppmi.html#sec-ppmi-description",
+    "title": "3  PPMI",
+    "section": "",
+    "text": "Parkinson’s disease patients\nPatients with prodromal symptoms of high penetrance genetic mutations associated with the disease\nHealthy individuals\n\n\n\n3.1.1 PPMI Studies\nPPMI actually encompasses various studies:\n\nPPMI Clinical - intensive in-person longitudinal evaluations of various cohorts\nPPMI Remote - remote study activities using smell tests, genotyping, and digital sensor technologies\nPPMI Online - online evaluations with patient-reported outcomes\n\nPatients can overlap between the three studies. Each study aims for a specific number of participants:\n\nPPMI Clinical: 4,000\nPPMI Remote: 40,000\nPPMI Online: 100,000\n\n\n\n3.1.2 Data Dashboard\nFor an overview of study participant demographics and data collection time points, users may refer to the data dashboard. This provides a limited set of characteristics, including the ability to filter by cohort, to review number of participants per visit, biological sex, ethnicity, and age.\n\n\n3.1.3 Cohort Definitions\n\n\n\n\n\n\nImportantConsensus Committee Classification\n\n\n\nCurrently, patients in the PPMI Clinical cohort are defined by a consensus committee. This means that even though some patients may have been enrolled in a specific cohort, their classification could shift longitudinally, and they may now be categorized differently, or excluded for various reasons.\n\n\nThis has resulted in roughly 2,000 combined PD and Prodromal PD participants, along with roughly 250 Health Controls (but depending on criteria for inclusion in your analysis, your figures may vary).\nAccording to the latest update from the consensus committee in May 2023, the number of participants correctly defined in the main study cohorts is:\n\nPD (diagnosis by clinical criteria + DaTscan compatible with PD): 1,104\nProdromal PD (either genetic, hyposmia or RBD - can overlap): 882\nHealthy Controls: 253",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>PPMI</span>"
+    ]
+  },
+  {
+    "objectID": "ppmi.html#sec-ppmi-features",
+    "href": "ppmi.html#sec-ppmi-features",
+    "title": "3  PPMI",
+    "section": "3.2 Study Data Features",
+    "text": "3.2 Study Data Features\n\n3.2.1 Clinical Data\n\nDemographics\nFamily history\nMedical history\nMedication history\nNeurological exam\nMDS-UPDRS (Parts I, II, III and IV)\nHoehn & Yahr scale\nModified Schwab & England Activities of Daily Living\nSCOPA-AUT\nGeriatric Depression Scale (Short Version)\nQUIP-Current-Short\nState-Trait Anxiety Inventory\nMontreal Cognitive Assessment (MoCA)\nNeurobehavioral and neuropsychological tests (various)\nUniversity of Pennsylvania Smell Identification Test (UPSIT)\nEpworth Sleepiness Scale\nREM Sleep Behavior Disorder Questionnaire\n\n\n\n3.2.2 Neuroimaging\n\nDaTSCAN (imaging and volumetry)\nDTI (imaging and volumetry)\nMRI (imaging)\nPET (substudies)\n\n\n\n3.2.3 Omics\n\nGenetic status related to the most common monogenic PD causes\nNeuroX SNP data\nImmunochip SNP data\nIllumina NeuroBooster SNP data\nWhole exome sequencing\nWhole genome sequencing\nBlood Transcriptomics (RNAseq)\nProteomics\nMetabolomics\n\n\n\n3.2.4 Biomarkers\nVarious biomarkers exist, but some of the most relevant are:\n\nCSF alpha-synuclein, amyloid-beta42, p-tau181 and total tau\nCSF alpha-synuclein seed amplification assay (SAA)\nSerum neurofilament light polypeptide (NfL)\n\n\n\n3.2.5 Other\n\nNeuropathology results",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>PPMI</span>"
+    ]
+  },
+  {
+    "objectID": "ppmi.html#sec-ppmi-access",
+    "href": "ppmi.html#sec-ppmi-access",
+    "title": "3  PPMI",
+    "section": "3.3 How to Access Data",
+    "text": "3.3 How to Access Data\nAccess to PPMI is provided free of charge and data to be analyzed needs to be downloaded.\n\n\n\n\n\n\nNoteSimple Access Process\n\n\n\nGaining access to PPMI data is a straightforward process.\n\n\n\nVisit the main study site\nClick the “Access data” option at the top left\nApply for data access, providing:\n\nPersonal information\nDetailed motivations for your intended analyses\nAgreement with data usage terms\n\nThe study committee will review your request and respond within a week\nOnce access is granted, log in to access the data\n\nThere is also a Data User Guide with detailed information.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>PPMI</span>"
+    ]
+  },
+  {
+    "objectID": "ppmi.html#sec-ppmi-uses",
+    "href": "ppmi.html#sec-ppmi-uses",
+    "title": "3  PPMI",
+    "section": "3.4 Intended Data Uses",
+    "text": "3.4 Intended Data Uses\nPPMI’s primary goals are to:\n\nIdentify PD biomarkers\nCompare clinical and non-clinical progression between different cohorts, including:\n\nIndividuals diagnosed with PD\nGenetic mutations\nProdromal symptoms\nHealthy participants",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>PPMI</span>"
+    ]
+  },
+  {
+    "objectID": "ppmi.html#sec-ppmi-strengths",
+    "href": "ppmi.html#sec-ppmi-strengths",
+    "title": "3  PPMI",
+    "section": "3.5 Data Set Strengths",
+    "text": "3.5 Data Set Strengths\n\nEvolving dataset - currently recruiting patients and stores biological material in order for interested researchers to propose additional projects and analyses\nGreat range of available data - relevant evaluations, omics and neuroimaging data on a wide range of clinical and non-clinical information\nLongitudinal followup - provides an opportunity to study disease progression\nMulticenter - at least 50 different centers from North America, Europe, the Middle East and Africa contribute patients to the study\nEarly stage patients - patients enter the study in early stages and not using PD medications, making it possible to evaluate baseline and some follow-up progression of the disease without medication confounders",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>PPMI</span>"
+    ]
+  },
+  {
+    "objectID": "ppmi.html#sec-ppmi-limitations",
+    "href": "ppmi.html#sec-ppmi-limitations",
+    "title": "3  PPMI",
+    "section": "3.6 Data Set Limitations",
+    "text": "3.6 Data Set Limitations\n\nRelatively low number of patients for some genetic analyses that require a large number of individuals (such as GWAS)\nUnderrepresentation of non-European ancestry populations",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>PPMI</span>"
+    ]
+  },
+  {
+    "objectID": "ppmi.html#sec-ppmi-docs",
+    "href": "ppmi.html#sec-ppmi-docs",
+    "title": "3  PPMI",
+    "section": "3.7 Pre-Existing Documentation/FAQs",
+    "text": "3.7 Pre-Existing Documentation/FAQs\n\n3.7.1 Available on PPMI Website (no login required)\nFor data users, there is a Data User Guide which is a great place to start developing an understanding of PPMI study data – its background, its use, and how to access it.\nThe PPMI website also contains useful information including:\n\nStudy protocol\nSchedule of activities\nOperations manual\nBiological data acquisition manual\nPathology data acquisition manual\nGenetic data processing manual\nAcquisition protocols for MRI, DTI, and SPECT\n\nAdditional Resources:\n\nOngoing Specimen Analysis - lists ongoing or completed projects and indicates if their results are publicly available\nSpecimen Dashboard - listing all biospecimens\nPPMI Study FAQs - answers to frequently asked questions study-wide\n\n\n\n3.7.2 Available on LONI Platform (requires login)\nAfter logging in to LONI, select “Download” at the top of the home screen, and choose “Study Data.” Here, you’ll find files to guide you in using PPMI data, including:\n\nConsensus Committee Analytic Dataset - an extremely important database that must be used to officially determine to which cohort each patient belongs. Specifically, every definition of the group to which a patient belongs comes from this database.\nPPMI Analytic Dataset Guide - a document that explains why the above document was created to define cohorts of patients and how to use it.\nPPMI Data User Guide - a document that provides an introduction and serves as a reference for explaining how to interpret certain variables and conduct some analyses.\n\nIn the “Study Docs” tab, you’ll also find the Code List and Data Dictionary, which provide meanings for each column name and their values.\nStudy Contact:\n\nContact Form\nEmail: ppmi@michaeljfox.org",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>PPMI</span>"
+    ]
+  },
+  {
+    "objectID": "ppmi.html#sec-ppmi-tips",
+    "href": "ppmi.html#sec-ppmi-tips",
+    "title": "3  PPMI",
+    "section": "3.8 Tips and Dataset Considerations",
+    "text": "3.8 Tips and Dataset Considerations\n\n\n\n\n\n\nWarningCritical: Consensus Committee Dataset\n\n\n\nCohort definitions are not those originally present and downloaded inside the study’s platform (LONI), but instead defined by a separate document (consensus committee analytic dataset) found inside the platform (as explained above).\n\n\n\n3.8.1 Biomarker and Omics Data\nMuch of biomarker and omics data from the study comes from proposed projects. It is important to carefully read each project’s documentation in order to better understand the structure and methods that were employed in the data of your interest. An overview of these projects can be found in Ongoing Specimen Analysis and the methodology for each one, inside LONI.\n\n\n3.8.2 Duplicate Entries - PDSTATE Variable\nSome participants have duplicate entries for the same study visit that are dependent upon the participant’s last dose of dopaminergic therapy (DT), which is defined as levodopa and/or dopamine agonists. The variable that determines this is called “PDSTATE” and is present in the MDS-UPDRS III questionnaire.\n\nOFF state: defined in the PPMI protocol as more than 6 hours after the last dose of DT\nON state: approximately one hour after the last dose of DT\n\n\n\n3.8.3 Screening vs. Baseline Visits\nThere is a screening visit and a baseline visit - occasionally there is a datapoint that was taken at one or the other, so it is worth checking both visits. For example, blood cell counts were taken at the screening visit and not the baseline visit, and then at subsequent yearly visits.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>PPMI</span>"
+    ]
+  },
+  {
+    "objectID": "ppmi.html#sec-ppmi-updates",
+    "href": "ppmi.html#sec-ppmi-updates",
+    "title": "3  PPMI",
+    "section": "3.9 Updates",
+    "text": "3.9 Updates\nThe study data updates regularly monthly as new participants are enrolled and participants already in follow-up attend study visits.\n\nClinical database entries: transferred nightly to the database\nComplete database update: conducted each Sunday\nImaging data: integrated into the database separately, on a monthly basis\nBiomarker/omics projects: new specific updates are added depending on the conclusion of proposed projects that analyze patients’ biological and neuroimaging data",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>PPMI</span>"
+    ]
+  },
+  {
+    "objectID": "gp2.html",
+    "href": "gp2.html",
+    "title": "4  GP2",
+    "section": "",
+    "text": "4.1 Study Description\nThe Global Parkinson’s Genetics Program (GP2) is a resource program of the Aligning Science Across Parkinson’s (ASAP) initiative focused on improving understanding of the genetic architecture of Parkinson’s disease (PD) by including groups traditionally underrepresented in genetics research. The ultimate goal is collecting and genotyping more than 200,000 unique samples, especially from diverse populations.\nIt currently includes 227 cohorts: - 74 cohort studies with data shared to AMP® PD - 153 that haven’t shared to AMP® PD yet\nLast updated (Release 6): December 21st, 2023",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>GP2</span>"
+    ]
+  },
+  {
+    "objectID": "gp2.html#sec-gp2-description",
+    "href": "gp2.html#sec-gp2-description",
+    "title": "4  GP2",
+    "section": "",
+    "text": "4.1.1 Genetic Data Organization\nThe genetic data could be found in two groups: complex disease or monogenic disease, and broken into genetically-determined ancestries:\n\n\n\n\n\n\n\nCode\nAncestry Description\n\n\n\n\nAAC\nAfrican American / Caribbean ancestry\n\n\nAFR\nAfrican ancestry\n\n\nAJ\nAshkenazi Jewish ancestry\n\n\nAMR\nLatino and indigenous Americas populations\n\n\nEUR\nGeneral European ancestry\n\n\nEAS\nEast Asian ancestry\n\n\nSAS\nSouth Asian ancestry\n\n\nFIN\nFinnish population isolate (only in complex group, no monogenic information)\n\n\nCAS\nCentral Asian ancestry\n\n\nMDE\nMiddle Eastern ancestry\n\n\nCAH\nComplex Admixture History (new in Release 6)\n\n\n\n\n\n4.1.2 Complex Admixture History (CAH)\n\n\n\n\n\n\nNoteNew Ancestry Group\n\n\n\nCAH, or Complex Admixture History, is a new ancestry group introduced to GP2 for release 6. It was created in response to a large number of samples with South African and other highly admixed individuals being incorrectly predicted as CAS (Central Asian) ancestry in release 5.\n\n\nFor release 6, the CAH ancestry group mainly contains samples from: - Stellenbosch University (Cape Town, South Africa) - The Coriell Institute (Camden, New Jersey, United States) - Parkinson’s Foundation (Miami, Florida, United States)\nWe consider any samples labeled as CAH to be too highly admixed to be included in analyses with other GP2 ancestry groups.\n\n\n4.1.3 Cohort Composition\nComplex disease data (genotypes), including locally-restricted samples: - Total: 44,831 genotyped participants - 24,709 PD cases - 17,246 Controls - 2,876 ‘Other’ phenotypes\nWhen removing the locally-restricted samples: - Total: 33,436 - 17,129 PD cases - 13,872 Controls - 2,435 ‘Other’ phenotypes\nMonogenic disease data (whole genome sequences): - Total: 2,324 sequenced participants - 1,854 PD cases - 314 Controls - 156 Other phenotypes\nWhen removing the locally-restricted samples: - Total: 2,083 - 1,650 PD cases - 309 Controls - 124 ‘Other’ phenotypes\nClinical phenotyping: 12,585 individuals who have extended clinical phenotyping information and matching genetic information.\nComposition of release 6 per ancestry group is available on the GP2 blog.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>GP2</span>"
+    ]
+  },
+  {
+    "objectID": "gp2.html#sec-gp2-features",
+    "href": "gp2.html#sec-gp2-features",
+    "title": "4  GP2",
+    "section": "4.2 Study Data Features",
+    "text": "4.2 Study Data Features\n\n4.2.1 Clinical Data\nComprehensive deep clinical phenotyping data for 12,585 individuals matched with genetic information:\n\nAge at diagnosis and onset\nPrimary, current, and latest diagnoses\nCognitive exams such as:\n\nMini-Mental State Examination (MMSE)\nMontreal Cognitive Assessment (MoCA)\n\nMovement Disorder Society-Sponsored Revision of the Unified Parkinson’s Disease Rating Scale (MDS-UPDRS)\nDetailed “other” phenotypes, such as Lewy Body Dementia (LBD)\n\n\n\n\n\n\n\nNoteCohort-Dependent Data\n\n\n\nEach cohort submits one of these datasets, according to their capacity, as demonstrated in the clinical data availability table.\n\n\n\n\n\n\n\n\nFigure 4.1: Clinical data availability across GP2 cohorts\n\n\n\n\n\n4.2.2 Neuroimaging\nNot available\n\n\n4.2.3 Omics\nBasic genomics are available:\n\nArrays: NeuroChip and Neurobooster\nWhole genome sequencing\n\n\n\n4.2.4 Biomarkers\nNot available\n\n\n4.2.5 Other\nNone",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>GP2</span>"
+    ]
+  },
+  {
+    "objectID": "gp2.html#sec-gp2-access",
+    "href": "gp2.html#sec-gp2-access",
+    "title": "4  GP2",
+    "section": "4.3 How to Access Data",
+    "text": "4.3 How to Access Data\nThere are two levels of access within GP2:\n\nTier 1: Summary statistics and other non-participant level data\nTier 2: Participant-level data + clinical metadata in latest releases\n\n\n\n\n\n\n\nImportantShared Access Process with AMP-PD\n\n\n\nAs GP2 completes cohort genotyping, all data is shared through the secured AMP® PD platform. For that reason, to request access, you must complete the steps as described in the AMP-PD registration page. This means that you request access to AMP-PD and GP2 data through the same procedure and you are granted access to both at the same time.\n\n\n\n4.3.1 Access Links\n\nGP2 Tier 1 Data (requires login)\nGP2 Tier 2 Data (requires login)\n\n\n\n4.3.2 Step-by-Step Access Process\n\nAMP PD Access Request Form\nSetting up a Google Account\nSetting up 2-Step Verification\nRequirements for accessing genomics data\nFull AMP PD Application Submission and Review Process\n\n\n\n4.3.3 Verily Viewpoint Workbench (VWB)\nBefore 2024, the only way to explore and analyze GP2 Data was through Terra, and data was stored in Google buckets. Due to General Data Protection Regulation, there is part of GP2 data that is in another platform called Verily Viewpoint Workbench (VWB).\nTo gain access to the full release on VWB you must:\n\nHave approved GP2 Tier 2 access\nFill out the GDPR-governed sample request form\nBe a GP2 consortium member (contributing cohort, GP2 partner, or project analyses team member)\n\nCosts depend on runtime, bytes processed, queries performed and usage of persistent disk. On webinars, they recommend that you use the default cloud environment details, and adjust them depending on the analysis you are running.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>GP2</span>"
+    ]
+  },
+  {
+    "objectID": "gp2.html#sec-gp2-uses",
+    "href": "gp2.html#sec-gp2-uses",
+    "title": "4  GP2",
+    "section": "4.4 Intended Data Uses",
+    "text": "4.4 Intended Data Uses\nThe primary goal of GP2 is to identify genetic variants associated with: - Parkinson’s disease risk - Age of onset - Disease progression - Related clinical features\nResearchers use the dataset to conduct genome-wide association studies (GWAS) and other genetic analyses to uncover novel genetic risk factors and potential therapeutic targets. GP2 datasets are made available to the broader scientific community to facilitate collaborative research and accelerate discoveries.\nGP2 datasets also serve as valuable resources for validating and replicating findings from previous genetic studies of Parkinson’s disease.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>GP2</span>"
+    ]
+  },
+  {
+    "objectID": "gp2.html#sec-gp2-strengths",
+    "href": "gp2.html#sec-gp2-strengths",
+    "title": "4  GP2",
+    "section": "4.5 Data Set Strengths",
+    "text": "4.5 Data Set Strengths\n\nDiverse ancestry information - provides data from underrepresented populations\nContinuously being updated and improved - regular releases with more data\nTraining opportunities - if you are part of GP2 you could get trained and learn in the process of accessing the data\nCohort browser access - summary of the information could be accessed through the cohort browser\nQuality control - QC has been done for the genetic analysis (genotools)\nRelated individuals removed - in latest version\nCode repository - codes available in GP2 learning platform with guided material\nOpen office hours - available every week\nProject support - you can propose projects and get financial support for running analysis + project manager assigned\nCollaborative environment - you can see projects currently being carried out to avoid duplication + join them",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>GP2</span>"
+    ]
+  },
+  {
+    "objectID": "gp2.html#sec-gp2-limitations",
+    "href": "gp2.html#sec-gp2-limitations",
+    "title": "4  GP2",
+    "section": "4.6 Data Set Limitations",
+    "text": "4.6 Data Set Limitations\n\nDelay to get access to the dataset\nTerra performance - use through Terra slows the analysis\nMembership requirements - new data is restricted to GP2 members\nHeterogeneity of the data - varies by contributing cohort\nNo imaging nor biomarkers data available\nCross-sectional data - no longitudinal follow-up\nFixed quality control - QC has been done for all samples (so you cannot change parameters)",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>GP2</span>"
+    ]
+  },
+  {
+    "objectID": "gp2.html#sec-gp2-docs",
+    "href": "gp2.html#sec-gp2-docs",
+    "title": "4  GP2",
+    "section": "4.7 Pre-Existing Documentation/FAQs/Study Contact",
+    "text": "4.7 Pre-Existing Documentation/FAQs/Study Contact\n\n4.7.1 Resources\n\nPolicies, guidelines and other resources\nCohort Dashboard\nMonogenic Resource Map\nMonogenic Portal\nData repository\nGP2’s opportunities page\nGP2 training resources (including on Terra, bioinformatics, PD, research methods, Python, and more!)\n\n\n\n4.7.2 Code Repositories\nAll GP2 code, and tools for data analysis are available on Github at the official Global Parkinson’s Genetics Program (GP2) code repositories.\n\n\n4.7.3 Contact\nEmail cohort@gp2.org to inquire about submitting cohort samples and joining the consortium.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>GP2</span>"
+    ]
+  },
+  {
+    "objectID": "gp2.html#sec-gp2-tips",
+    "href": "gp2.html#sec-gp2-tips",
+    "title": "4  GP2",
+    "section": "4.8 Tips and Dataset Considerations",
+    "text": "4.8 Tips and Dataset Considerations\n\n\n\n\n\n\nWarningImportant Considerations\n\n\n\n\nMissing values: There are a lot of missing values as the dataset depends on which cohort is submitting the data.\nPartial rare variant information: The results that appear in the cohort browser for rare variants are only for some genes, so you have partial information.\nProject proposals: For gaining access you have to present a project proposal, and you don’t know if your idea has already been under analysis, so you could waste time on this process.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>GP2</span>"
+    ]
+  },
+  {
+    "objectID": "gp2.html#sec-gp2-updates",
+    "href": "gp2.html#sec-gp2-updates",
+    "title": "4  GP2",
+    "section": "4.9 Updates",
+    "text": "4.9 Updates\nGP2 Updates will provide updates on the newest releases and findings pertaining to GP2.\nThe most recent update (at time of this draft) was announced in January 2024.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>GP2</span>"
+    ]
+  },
+  {
+    "objectID": "fox-insight.html",
+    "href": "fox-insight.html",
+    "title": "5  FOX INSIGHT",
+    "section": "",
+    "text": "5.1 Study Description\nThe following is obtained from the Fox Insight website:",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>FOX INSIGHT</span>"
+    ]
+  },
+  {
+    "objectID": "fox-insight.html#sec-fox-insight-description",
+    "href": "fox-insight.html#sec-fox-insight-description",
+    "title": "5  FOX INSIGHT",
+    "section": "",
+    "text": "“Fox Insight is a dynamic online longitudinal clinical study of people both with and without Parkinson’s disease. The study seeks to enroll tens of thousands of diverse participants, making Fox Insight the largest and most representative Parkinson’s research study to date. The Fox Insight platform deploys a variety of health, lifestyle, and Parkinson’s routine assessments. Fox Insight is sponsored by The Michael J. Fox Foundation for Parkinson’s Research.”\n\n\n5.1.1 Study Population\nFox Insight includes individuals who are 18 years or older. Participants complete online surveys that assess:\n\nNeurological history\nMotor and non-motor symptoms\nQuality of life\nEnvironmental exposures\nOther types of outcomes\n\nIt includes both cross-sectional and longitudinal assessments. See the assessments and timeline of scheduled activities PDF for additional details.\n\n\n5.1.2 Key Publication\n\n\n\n\n\n\nTipIn-Depth Overview\n\n\n\nThe publication “Fox Insight collects online, longitudinal patient-reported outcomes and genetic data on Parkinson’s disease” provides an in-depth overview of Fox Insight. Check it out for additional information.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>FOX INSIGHT</span>"
+    ]
+  },
+  {
+    "objectID": "fox-insight.html#sec-fox-insight-features",
+    "href": "fox-insight.html#sec-fox-insight-features",
+    "title": "5  FOX INSIGHT",
+    "section": "5.2 Study Data Features",
+    "text": "5.2 Study Data Features\n\n5.2.1 Clinical Data\n\nDemographics\nNeurological history (e.g., PD diagnosis, disease onset)\nHealth and medical history\nFamily history\nCognition and daily living activities\nMotor symptoms including MDS-UPDRS\nEmotional functioning\nEnvironmental exposures\nSubstance use\nTraumatic brain injury and repetitive head impact histories\nPhysical activity and sleep\nHeight and weight\nOccupation\nFactors related to social determinants of health\n\n\n\n5.2.2 Genetic Data\n\n23andMe saliva collection kit for genotyping on a variety of platforms:\n\nV3 platform\nV4 platform\nV5 platform\n\nGenetic variants available in data set include those located near:\n\nGBA\nLRRK2\nAPOE\nPRKN\nMCCC1\nBIN3\nHLA locus\n\n\n\n\n5.2.3 Other Data Types\nThere is no neuroimaging or other biomarker data linked to the data set.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>FOX INSIGHT</span>"
+    ]
+  },
+  {
+    "objectID": "fox-insight.html#sec-fox-insight-access",
+    "href": "fox-insight.html#sec-fox-insight-access",
+    "title": "5  FOX INSIGHT",
+    "section": "5.3 How to Access Data",
+    "text": "5.3 How to Access Data\nData is available to qualified researchers who have agreed to the data use agreement and publication policy. Access to Fox Insight data is available at no cost.\n\n\n\n\n\n\nNoteGetting Started\n\n\n\nThe Getting Started with Fox DEN, a Parkinson’s Data Platform video discusses how to get started.\n\n\n\n5.3.1 Data Access Options\nData can be downloaded from the variable explorer where users can:\n\nCustom export: Select specific variables of interest for a custom export\nMonthly data cut: Download the latest version of the full dataset (login required)",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>FOX INSIGHT</span>"
+    ]
+  },
+  {
+    "objectID": "fox-insight.html#sec-fox-insight-uses",
+    "href": "fox-insight.html#sec-fox-insight-uses",
+    "title": "5  FOX INSIGHT",
+    "section": "5.4 Intended Data Uses",
+    "text": "5.4 Intended Data Uses\nAll data is collected remotely, online and data is reported by patients/participants. This format allows for large scale collection of data to address ongoing knowledge gaps in PD including:\n\nNeed for large sample sizes\nLongitudinal follow up\n\nThe study type might also help to improve access to people and communities not represented in clinic or in person studies. The overall goal is to better understand the risk factors, clinical symptoms, and experiences of people with and/or at risk for PD.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>FOX INSIGHT</span>"
+    ]
+  },
+  {
+    "objectID": "fox-insight.html#sec-fox-insight-strengths",
+    "href": "fox-insight.html#sec-fox-insight-strengths",
+    "title": "5  FOX INSIGHT",
+    "section": "5.5 Data Set Strengths",
+    "text": "5.5 Data Set Strengths\n\nLarge sample sizes with a range of data collected on a sample enriched for having PD, allowing for detailed investigations on risk factors and clinical presentation for PD.\nLongitudinal data including monitoring for 60 months. There are regular intervals of follow up (3 month increments, depending on the questionnaire) allowing for assessment of serial change and trajectories.\nEvolving data set and monthly data cuts provided by Fox DEN.\nComparison group available - The sample is enriched for patients with PD or at risk for PD, but there is an available comparison group of non-PD controls.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>FOX INSIGHT</span>"
+    ]
+  },
+  {
+    "objectID": "fox-insight.html#sec-fox-insight-limitations",
+    "href": "fox-insight.html#sec-fox-insight-limitations",
+    "title": "5  FOX INSIGHT",
+    "section": "5.6 Data Set Limitations",
+    "text": "5.6 Data Set Limitations\n\nAll data is self-reported (with the exception of the FIVE sub-study data, which only a small number of participants with PD joined from the overall cohort), which may result in:\n\nUnsupervised completion of assessments\nMissing data\nLimitations to generalizability\n\nNo genotyping for study participants without PD",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>FOX INSIGHT</span>"
+    ]
+  },
+  {
+    "objectID": "fox-insight.html#sec-fox-insight-docs",
+    "href": "fox-insight.html#sec-fox-insight-docs",
+    "title": "5  FOX INSIGHT",
+    "section": "5.7 Pre-Existing Documentation/FAQs",
+    "text": "5.7 Pre-Existing Documentation/FAQs\nThe Fox Insight ‘resources’ section includes several potentially useful items including:\n\nData Dictionary (machine-readable)\nAnnotated Data Dictionary (human-readable)\nTime Representation in Fox DEN (helpful for longitudinal analysis)\n\n\n\n\n\n\n\nTipQuick-Start Guide\n\n\n\nThe annotated data dictionary, in particular, contains an introduction and quick-start guide that provides users with a basic overview of how to understand Fox Insight data and proposed approaches to common researcher questions.\n\n\n\n5.7.1 Additional Resources\n\nFox Insight FAQs (scroll to end of the linked page)\nStudy data inbox: foxden@michaeljfox.org",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>FOX INSIGHT</span>"
+    ]
+  },
+  {
+    "objectID": "fox-insight.html#sec-fox-insight-tips",
+    "href": "fox-insight.html#sec-fox-insight-tips",
+    "title": "5  FOX INSIGHT",
+    "section": "5.8 Tips and Dataset Considerations",
+    "text": "5.8 Tips and Dataset Considerations\n\n5.8.1 Visit Window Changes\nVisit windows initially did not have a buffer between them, so during the earliest period of data collection, participants could have their visit window close on 1/15 and then a new one open on 1/16.\n\n\n\n\n\n\nNoteVisit Window Update\n\n\n\nTo address this issue, a 30-day window between study visit close date and the opening of the next visit was instituted on 09/05/2019.\n\n\n\n\n5.8.2 Complex Schedule of Activities\nThere is a complex schedule of activities that needs to be reviewed closely so that the user has a clear understanding of when each assessment was administered, including those that have only one assessment. Depending on the scientific question and data to be used, there might be a need to select data around a certain visit.\n\n\n5.8.3 Beta Group Participants\nApproximately 8% of total participants as of 03-01-23 were part of Fox Insight’s beta group, defined as those joining before the March 2017 soft launch of Fox Insight.\n\n\n\n\n\n\nWarningBeta Period Data Availability\n\n\n\nData collected during the beta period (defined as July 2014 to February 2017) could be subject to questionnaire versioning and inconsistencies associated with platform troubleshooting and optimization. Because of this, data collected during this time is not publicly available.\nHowever, data collected from participants who enrolled during this time but continued on to contribute data following March 2017 are publicly available.\n\n\n\n\n5.8.4 Related Publications\nA data descriptor manuscript was published in 2020 and provides additional detail on the Fox Insight study and its data. An updated version of this paper is currently under review.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>FOX INSIGHT</span>"
+    ]
+  },
+  {
+    "objectID": "fox-insight.html#sec-fox-insight-updates",
+    "href": "fox-insight.html#sec-fox-insight-updates",
+    "title": "5  FOX INSIGHT",
+    "section": "5.9 Updates",
+    "text": "5.9 Updates\nThe Fox Insight database is updated monthly at the beginning of each month with newly collected study data.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>FOX INSIGHT</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "Additional Resources",
+    "section": "",
+    "text": "Dataset-Specific Resources\nThis section provides additional resources and information for working with Parkinson’s disease datasets.",
+    "crumbs": [
+      "Additional Resources"
+    ]
+  },
+  {
+    "objectID": "references.html#dataset-specific-resources",
+    "href": "references.html#dataset-specific-resources",
+    "title": "Additional Resources",
+    "section": "",
+    "text": "AMP PD\n\nAMP-PD Official Website\nAMP-PD in Terra\nAMP-PD FAQs\nAMP-PD News and Updates\nContact: ACT@amp-pd.org\n\n\n\nPPMI\n\nPPMI Official Website\nPPMI Data Dashboard\nPPMI Data User Guide\nPPMI Study FAQs\nOngoing Specimen Analysis\nPPMI Specimen Dashboard\nLONI Data Access Platform\nContact: ppmi@michaeljfox.org\nContact Form\n\n\n\nGP2\n\nGP2 Official Website\nGP2 Blog\nGP2 Cohort Dashboard\nGP2 Data Repository\nGP2 Training Resources\nGP2 Code Repositories (GitHub)\nGP2 Monogenic Resource Map\nGP2 Monogenic Portal\nGP2 Opportunities Page\nGP2 Updates\nContact: cohort@gp2.org\n\n\n\nFOX INSIGHT\n\nFox Insight Official Website\nFox DEN Data Platform\nFox DEN Getting Started Video\nFox DEN Variable Explorer\nFox Insight Resources\nFox Insight FAQs\nFox Insight Data Descriptor Publication\nContact: foxden@michaeljfox.org",
+    "crumbs": [
+      "Additional Resources"
+    ]
+  },
+  {
+    "objectID": "references.html#general-parkinsons-disease-resources",
+    "href": "references.html#general-parkinsons-disease-resources",
+    "title": "Additional Resources",
+    "section": "General Parkinson’s Disease Resources",
+    "text": "General Parkinson’s Disease Resources\n\nMichael J. Fox Foundation\n\nMJFF Official Website\nMJFF Research Tools\nResearch Community: researchcommunity@michaeljfox.org\n\n\n\nCloud Computing Platforms\n\nTerra Platform - Cloud platform for biomedical research\nVerily Viewpoint Workbench - GDPR-compliant analysis platform\nGoogle Cloud Platform - Backend infrastructure for AMP-PD and GP2",
+    "crumbs": [
+      "Additional Resources"
+    ]
+  },
+  {
+    "objectID": "references.html#key-publications",
+    "href": "references.html#key-publications",
+    "title": "Additional Resources",
+    "section": "Key Publications",
+    "text": "Key Publications\n\nFOX INSIGHT\n\nSmolensky, L., Amondikar, N., Crawford, K. et al. Fox Insight collects online, longitudinal patient-reported outcomes and genetic data on Parkinson’s disease. Sci Data 7, 67 (2020). https://doi.org/10.1038/s41597-020-0401-2",
+    "crumbs": [
+      "Additional Resources"
+    ]
+  },
+  {
+    "objectID": "references.html#community-and-support",
+    "href": "references.html#community-and-support",
+    "title": "Additional Resources",
+    "section": "Community and Support",
+    "text": "Community and Support\n\nData Community of Practice\nThis guide is maintained by the Data Community of Practice, a collaborative effort to improve data accessibility and usability in Parkinson’s disease research.\n\n\nContributing to This Guide\nWe welcome contributions to keep this guide current and comprehensive!\n\n\n\n\n\n\nNoteHow to Contribute\n\n\n\nIf you would like to:\n\nAdd information about a new dataset\nUpdate existing content\nCorrect errors or outdated information\nSuggest improvements to the guide\n\nPlease contact: researchcommunity@michaeljfox.org",
+    "crumbs": [
+      "Additional Resources"
+    ]
+  },
+  {
+    "objectID": "references.html#technical-resources",
+    "href": "references.html#technical-resources",
+    "title": "Additional Resources",
+    "section": "Technical Resources",
+    "text": "Technical Resources\n\nData Analysis Tools\n\nR Statistical Software: https://www.r-project.org/\nPython: https://www.python.org/\nBioconductor: https://www.bioconductor.org/\nJupyter Notebooks: https://jupyter.org/\n\n\n\nVersion Control and Collaboration\n\nGitHub: https://github.com/\nGit: https://git-scm.com/\n\n\n\nQuarto Publishing\nThis web book was created using Quarto, an open-source scientific and technical publishing system.\n\nQuarto: https://quarto.org/\nQuarto Books: https://quarto.org/docs/books/",
+    "crumbs": [
+      "Additional Resources"
+    ]
+  },
+  {
+    "objectID": "references.html#citing-this-guide",
+    "href": "references.html#citing-this-guide",
+    "title": "Additional Resources",
+    "section": "Citing This Guide",
+    "text": "Citing This Guide\nIf you use this guide in your research or reference it in publications, please cite as:\n\nAlosco, M., Hutchins, E., Saffie Awad, P., Dardov, V., Gottesman, J., Iwaki, H., Reyes-Perez, P., Teixeira dos Santos, D., & Sanghvi, M. (2024). Getting Started With Parkinson’s Disease Data (Version 1.0). Data Community of Practice, The Michael J. Fox Foundation for Parkinson’s Research.",
+    "crumbs": [
+      "Additional Resources"
+    ]
+  },
+  {
+    "objectID": "references.html#license",
+    "href": "references.html#license",
+    "title": "Additional Resources",
+    "section": "License",
+    "text": "License\nThis work is licensed under a Creative Commons Attribution 4.0 International License (CC BY 4.0).\nYou are free to:\n\nShare — copy and redistribute the material in any medium or format\nAdapt — remix, transform, and build upon the material for any purpose, even commercially\n\nUnder the following terms:\n\nAttribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made",
+    "crumbs": [
+      "Additional Resources"
+    ]
+  },
+  {
+    "objectID": "references.html#acknowledgements",
+    "href": "references.html#acknowledgements",
+    "title": "Additional Resources",
+    "section": "Acknowledgements",
+    "text": "Acknowledgements\nThis guide was created with contributions from the Data Community of Practice and is powered by The Michael J. Fox Foundation for Parkinson’s Research.\nWe thank all the researchers, clinicians, and participants who contribute to these valuable datasets and make Parkinson’s disease research possible.\n\nVersion 1.0 | May 2024",
+    "crumbs": [
+      "Additional Resources"
+    ]
+  }
+]

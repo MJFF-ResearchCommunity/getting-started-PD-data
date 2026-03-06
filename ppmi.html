@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>3&nbsp; PPMI – Getting Started With Parkinson's Disease Data</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./gp2.html" rel="next">
+<link href="./amp-pd.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-00ccf60c28c3bdf2d57f5131fbf16f11.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ppmi.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">PPMI</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Getting Started With Parkinson’s Disease Data</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/MJFF-ResearchCommunity/getting-started-PD-data" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Dataset Overview</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./amp-pd.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">AMP® PD</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ppmi.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">PPMI</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./gp2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">GP2</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./fox-insight.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">FOX INSIGHT</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Additional Resources</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#sec-ppmi-description" id="toc-sec-ppmi-description" class="nav-link active" data-scroll-target="#sec-ppmi-description"><span class="header-section-number">3.1</span> Study Description</a>
+  <ul class="collapse">
+  <li><a href="#ppmi-studies" id="toc-ppmi-studies" class="nav-link" data-scroll-target="#ppmi-studies"><span class="header-section-number">3.1.1</span> PPMI Studies</a></li>
+  <li><a href="#data-dashboard" id="toc-data-dashboard" class="nav-link" data-scroll-target="#data-dashboard"><span class="header-section-number">3.1.2</span> Data Dashboard</a></li>
+  <li><a href="#cohort-definitions" id="toc-cohort-definitions" class="nav-link" data-scroll-target="#cohort-definitions"><span class="header-section-number">3.1.3</span> Cohort Definitions</a></li>
+  </ul></li>
+  <li><a href="#sec-ppmi-features" id="toc-sec-ppmi-features" class="nav-link" data-scroll-target="#sec-ppmi-features"><span class="header-section-number">3.2</span> Study Data Features</a>
+  <ul class="collapse">
+  <li><a href="#clinical-data" id="toc-clinical-data" class="nav-link" data-scroll-target="#clinical-data"><span class="header-section-number">3.2.1</span> Clinical Data</a></li>
+  <li><a href="#neuroimaging" id="toc-neuroimaging" class="nav-link" data-scroll-target="#neuroimaging"><span class="header-section-number">3.2.2</span> Neuroimaging</a></li>
+  <li><a href="#omics" id="toc-omics" class="nav-link" data-scroll-target="#omics"><span class="header-section-number">3.2.3</span> Omics</a></li>
+  <li><a href="#biomarkers" id="toc-biomarkers" class="nav-link" data-scroll-target="#biomarkers"><span class="header-section-number">3.2.4</span> Biomarkers</a></li>
+  <li><a href="#other" id="toc-other" class="nav-link" data-scroll-target="#other"><span class="header-section-number">3.2.5</span> Other</a></li>
+  </ul></li>
+  <li><a href="#sec-ppmi-access" id="toc-sec-ppmi-access" class="nav-link" data-scroll-target="#sec-ppmi-access"><span class="header-section-number">3.3</span> How to Access Data</a></li>
+  <li><a href="#sec-ppmi-uses" id="toc-sec-ppmi-uses" class="nav-link" data-scroll-target="#sec-ppmi-uses"><span class="header-section-number">3.4</span> Intended Data Uses</a></li>
+  <li><a href="#sec-ppmi-strengths" id="toc-sec-ppmi-strengths" class="nav-link" data-scroll-target="#sec-ppmi-strengths"><span class="header-section-number">3.5</span> Data Set Strengths</a></li>
+  <li><a href="#sec-ppmi-limitations" id="toc-sec-ppmi-limitations" class="nav-link" data-scroll-target="#sec-ppmi-limitations"><span class="header-section-number">3.6</span> Data Set Limitations</a></li>
+  <li><a href="#sec-ppmi-docs" id="toc-sec-ppmi-docs" class="nav-link" data-scroll-target="#sec-ppmi-docs"><span class="header-section-number">3.7</span> Pre-Existing Documentation/FAQs</a>
+  <ul class="collapse">
+  <li><a href="#available-on-ppmi-website-no-login-required" id="toc-available-on-ppmi-website-no-login-required" class="nav-link" data-scroll-target="#available-on-ppmi-website-no-login-required"><span class="header-section-number">3.7.1</span> Available on PPMI Website (no login required)</a></li>
+  <li><a href="#available-on-loni-platform-requires-login" id="toc-available-on-loni-platform-requires-login" class="nav-link" data-scroll-target="#available-on-loni-platform-requires-login"><span class="header-section-number">3.7.2</span> Available on LONI Platform (requires login)</a></li>
+  </ul></li>
+  <li><a href="#sec-ppmi-tips" id="toc-sec-ppmi-tips" class="nav-link" data-scroll-target="#sec-ppmi-tips"><span class="header-section-number">3.8</span> Tips and Dataset Considerations</a>
+  <ul class="collapse">
+  <li><a href="#biomarker-and-omics-data" id="toc-biomarker-and-omics-data" class="nav-link" data-scroll-target="#biomarker-and-omics-data"><span class="header-section-number">3.8.1</span> Biomarker and Omics Data</a></li>
+  <li><a href="#duplicate-entries---pdstate-variable" id="toc-duplicate-entries---pdstate-variable" class="nav-link" data-scroll-target="#duplicate-entries---pdstate-variable"><span class="header-section-number">3.8.2</span> Duplicate Entries - PDSTATE Variable</a></li>
+  <li><a href="#screening-vs.-baseline-visits" id="toc-screening-vs.-baseline-visits" class="nav-link" data-scroll-target="#screening-vs.-baseline-visits"><span class="header-section-number">3.8.3</span> Screening vs.&nbsp;Baseline Visits</a></li>
+  </ul></li>
+  <li><a href="#sec-ppmi-updates" id="toc-sec-ppmi-updates" class="nav-link" data-scroll-target="#sec-ppmi-updates"><span class="header-section-number">3.9</span> Updates</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/MJFF-ResearchCommunity/getting-started-PD-data/edit/main/ppmi.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/MJFF-ResearchCommunity/getting-started-PD-data/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="sec-ppmi" class="quarto-section-identifier"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">PPMI</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="sec-ppmi-description" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="sec-ppmi-description"><span class="header-section-number">3.1</span> Study Description</h2>
+<p>PPMI is a longitudinal cohort that evaluates a variety of clinical, genomics, transcriptomics, proteomics, biomarkers, and neuroimaging data from three different patient cohorts:</p>
+<ol type="1">
+<li>Parkinson’s disease patients</li>
+<li>Patients with prodromal symptoms of high penetrance genetic mutations associated with the disease</li>
+<li>Healthy individuals</li>
+</ol>
+<p>Patients are expected to have at least 5 years of follow-up.</p>
+<section id="ppmi-studies" class="level3" data-number="3.1.1">
+<h3 data-number="3.1.1" class="anchored" data-anchor-id="ppmi-studies"><span class="header-section-number">3.1.1</span> PPMI Studies</h3>
+<p>PPMI actually encompasses various studies:</p>
+<ul>
+<li><strong>PPMI Clinical</strong> - intensive in-person longitudinal evaluations of various cohorts</li>
+<li><strong>PPMI Remote</strong> - remote study activities using smell tests, genotyping, and digital sensor technologies</li>
+<li><strong>PPMI Online</strong> - online evaluations with patient-reported outcomes</li>
+</ul>
+<p>Patients can overlap between the three studies. Each study aims for a specific number of participants:</p>
+<ul>
+<li>PPMI Clinical: 4,000</li>
+<li>PPMI Remote: 40,000</li>
+<li>PPMI Online: 100,000</li>
+</ul>
+</section>
+<section id="data-dashboard" class="level3" data-number="3.1.2">
+<h3 data-number="3.1.2" class="anchored" data-anchor-id="data-dashboard"><span class="header-section-number">3.1.2</span> Data Dashboard</h3>
+<p>For an overview of study participant demographics and data collection time points, users may refer to the <a href="https://www.ppmi-info.org/data-dashboard">data dashboard</a>. This provides a limited set of characteristics, including the ability to filter by cohort, to review number of participants per visit, biological sex, ethnicity, and age.</p>
+</section>
+<section id="cohort-definitions" class="level3" data-number="3.1.3">
+<h3 data-number="3.1.3" class="anchored" data-anchor-id="cohort-definitions"><span class="header-section-number">3.1.3</span> Cohort Definitions</h3>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Consensus Committee Classification
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Currently, patients in the PPMI Clinical cohort are defined by a consensus committee. This means that even though some patients may have been enrolled in a specific cohort, their classification could shift longitudinally, and they may now be categorized differently, or excluded for various reasons.</p>
+</div>
+</div>
+<p>This has resulted in roughly 2,000 combined PD and Prodromal PD participants, along with roughly 250 Health Controls (but depending on criteria for inclusion in your analysis, your figures may vary).</p>
+<p>According to the latest update from the consensus committee in May 2023, the number of participants correctly defined in the main study cohorts is:</p>
+<ul>
+<li><strong>PD</strong> (diagnosis by clinical criteria + DaTscan compatible with PD): 1,104</li>
+<li><strong>Prodromal PD</strong> (either genetic, hyposmia or RBD - can overlap): 882</li>
+<li><strong>Healthy Controls</strong>: 253</li>
+</ul>
+</section>
+</section>
+<section id="sec-ppmi-features" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="sec-ppmi-features"><span class="header-section-number">3.2</span> Study Data Features</h2>
+<section id="clinical-data" class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="clinical-data"><span class="header-section-number">3.2.1</span> Clinical Data</h3>
+<ul>
+<li>Demographics</li>
+<li>Family history</li>
+<li>Medical history</li>
+<li>Medication history</li>
+<li>Neurological exam</li>
+<li>MDS-UPDRS (Parts I, II, III and IV)</li>
+<li>Hoehn &amp; Yahr scale</li>
+<li>Modified Schwab &amp; England Activities of Daily Living</li>
+<li>SCOPA-AUT</li>
+<li>Geriatric Depression Scale (Short Version)</li>
+<li>QUIP-Current-Short</li>
+<li>State-Trait Anxiety Inventory</li>
+<li>Montreal Cognitive Assessment (MoCA)</li>
+<li>Neurobehavioral and neuropsychological tests (various)</li>
+<li>University of Pennsylvania Smell Identification Test (UPSIT)</li>
+<li>Epworth Sleepiness Scale</li>
+<li>REM Sleep Behavior Disorder Questionnaire</li>
+</ul>
+</section>
+<section id="neuroimaging" class="level3" data-number="3.2.2">
+<h3 data-number="3.2.2" class="anchored" data-anchor-id="neuroimaging"><span class="header-section-number">3.2.2</span> Neuroimaging</h3>
+<ul>
+<li>DaTSCAN (imaging and volumetry)</li>
+<li>DTI (imaging and volumetry)</li>
+<li>MRI (imaging)</li>
+<li>PET (substudies)</li>
+</ul>
+</section>
+<section id="omics" class="level3" data-number="3.2.3">
+<h3 data-number="3.2.3" class="anchored" data-anchor-id="omics"><span class="header-section-number">3.2.3</span> Omics</h3>
+<ul>
+<li>Genetic status related to the most common monogenic PD causes</li>
+<li>NeuroX SNP data</li>
+<li>Immunochip SNP data</li>
+<li>Illumina NeuroBooster SNP data</li>
+<li>Whole exome sequencing</li>
+<li>Whole genome sequencing</li>
+<li>Blood Transcriptomics (RNAseq)</li>
+<li>Proteomics</li>
+<li>Metabolomics</li>
+</ul>
+</section>
+<section id="biomarkers" class="level3" data-number="3.2.4">
+<h3 data-number="3.2.4" class="anchored" data-anchor-id="biomarkers"><span class="header-section-number">3.2.4</span> Biomarkers</h3>
+<p>Various biomarkers exist, but some of the most relevant are:</p>
+<ul>
+<li>CSF alpha-synuclein, amyloid-beta42, p-tau181 and total tau</li>
+<li>CSF alpha-synuclein seed amplification assay (SAA)</li>
+<li>Serum neurofilament light polypeptide (NfL)</li>
+</ul>
+</section>
+<section id="other" class="level3" data-number="3.2.5">
+<h3 data-number="3.2.5" class="anchored" data-anchor-id="other"><span class="header-section-number">3.2.5</span> Other</h3>
+<ul>
+<li>Neuropathology results</li>
+</ul>
+</section>
+</section>
+<section id="sec-ppmi-access" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="sec-ppmi-access"><span class="header-section-number">3.3</span> How to Access Data</h2>
+<p>Access to PPMI is provided free of charge and data to be analyzed needs to be downloaded.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Simple Access Process
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Gaining access to PPMI data is a straightforward process.</p>
+</div>
+</div>
+<ol type="1">
+<li>Visit the <a href="https://www.ppmi-info.org/">main study site</a></li>
+<li>Click the “Access data” option at the top left</li>
+<li>Apply for data access, providing:
+<ul>
+<li>Personal information</li>
+<li>Detailed motivations for your intended analyses</li>
+<li>Agreement with data usage terms</li>
+</ul></li>
+<li>The study committee will review your request and respond within a week</li>
+<li>Once access is granted, log in to access the data</li>
+</ol>
+<p>There is also a <a href="https://www.ppmi-info.org/data-user-guide">Data User Guide</a> with detailed information.</p>
+</section>
+<section id="sec-ppmi-uses" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="sec-ppmi-uses"><span class="header-section-number">3.4</span> Intended Data Uses</h2>
+<p>PPMI’s primary goals are to:</p>
+<ul>
+<li>Identify PD biomarkers</li>
+<li>Compare clinical and non-clinical progression between different cohorts, including:
+<ul>
+<li>Individuals diagnosed with PD</li>
+<li>Genetic mutations</li>
+<li>Prodromal symptoms</li>
+<li>Healthy participants</li>
+</ul></li>
+</ul>
+</section>
+<section id="sec-ppmi-strengths" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="sec-ppmi-strengths"><span class="header-section-number">3.5</span> Data Set Strengths</h2>
+<ol type="1">
+<li><p><strong>Evolving dataset</strong> - currently recruiting patients and stores biological material in order for interested researchers to propose additional projects and analyses</p></li>
+<li><p><strong>Great range of available data</strong> - relevant evaluations, omics and neuroimaging data on a wide range of clinical and non-clinical information</p></li>
+<li><p><strong>Longitudinal followup</strong> - provides an opportunity to study disease progression</p></li>
+<li><p><strong>Multicenter</strong> - at least 50 different centers from North America, Europe, the Middle East and Africa contribute patients to the study</p></li>
+<li><p><strong>Early stage patients</strong> - patients enter the study in early stages and not using PD medications, making it possible to evaluate baseline and some follow-up progression of the disease without medication confounders</p></li>
+</ol>
+</section>
+<section id="sec-ppmi-limitations" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="sec-ppmi-limitations"><span class="header-section-number">3.6</span> Data Set Limitations</h2>
+<ol type="1">
+<li><p>Relatively low number of patients for some genetic analyses that require a large number of individuals (such as GWAS)</p></li>
+<li><p>Underrepresentation of non-European ancestry populations</p></li>
+</ol>
+</section>
+<section id="sec-ppmi-docs" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="sec-ppmi-docs"><span class="header-section-number">3.7</span> Pre-Existing Documentation/FAQs</h2>
+<section id="available-on-ppmi-website-no-login-required" class="level3" data-number="3.7.1">
+<h3 data-number="3.7.1" class="anchored" data-anchor-id="available-on-ppmi-website-no-login-required"><span class="header-section-number">3.7.1</span> Available on PPMI Website (no login required)</h3>
+<p>For data users, there is a <a href="https://www.ppmi-info.org/data-user-guide">Data User Guide</a> which is a great place to start developing an understanding of PPMI study data – its background, its use, and how to access it.</p>
+<p>The PPMI website also contains useful information including:</p>
+<ul>
+<li>Study protocol</li>
+<li>Schedule of activities</li>
+<li>Operations manual</li>
+<li>Biological data acquisition manual</li>
+<li>Pathology data acquisition manual</li>
+<li>Genetic data processing manual</li>
+<li>Acquisition protocols for MRI, DTI, and SPECT</li>
+</ul>
+<p><strong>Additional Resources:</strong></p>
+<ul>
+<li><a href="https://www.ppmi-info.org/ongoing-specimen-analysis">Ongoing Specimen Analysis</a> - lists ongoing or completed projects and indicates if their results are publicly available</li>
+<li><a href="https://www.ppmi-info.org/specimen-dashboard">Specimen Dashboard</a> - listing all biospecimens</li>
+<li><a href="https://www.ppmi-info.org/faqs">PPMI Study FAQs</a> - answers to frequently asked questions study-wide</li>
+</ul>
+</section>
+<section id="available-on-loni-platform-requires-login" class="level3" data-number="3.7.2">
+<h3 data-number="3.7.2" class="anchored" data-anchor-id="available-on-loni-platform-requires-login"><span class="header-section-number">3.7.2</span> Available on LONI Platform (requires login)</h3>
+<p>After logging in to <a href="https://ida.loni.usc.edu/">LONI</a>, select “Download” at the top of the home screen, and choose “Study Data.” Here, you’ll find files to guide you in using PPMI data, including:</p>
+<ol type="1">
+<li><p><strong>Consensus Committee Analytic Dataset</strong> - an extremely important database that must be used to officially determine to which cohort each patient belongs. Specifically, every definition of the group to which a patient belongs comes from this database.</p></li>
+<li><p><strong>PPMI Analytic Dataset Guide</strong> - a document that explains why the above document was created to define cohorts of patients and how to use it.</p></li>
+<li><p><strong>PPMI Data User Guide</strong> - a document that provides an introduction and serves as a reference for explaining how to interpret certain variables and conduct some analyses.</p></li>
+</ol>
+<p>In the “Study Docs” tab, you’ll also find the <strong>Code List</strong> and <strong>Data Dictionary</strong>, which provide meanings for each column name and their values.</p>
+<p><strong>Study Contact:</strong></p>
+<ul>
+<li><a href="https://www.ppmi-info.org/contact/contact_us">Contact Form</a></li>
+<li>Email: <a href="mailto:ppmi@michaeljfox.org">ppmi@michaeljfox.org</a></li>
+</ul>
+</section>
+</section>
+<section id="sec-ppmi-tips" class="level2" data-number="3.8">
+<h2 data-number="3.8" class="anchored" data-anchor-id="sec-ppmi-tips"><span class="header-section-number">3.8</span> Tips and Dataset Considerations</h2>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Critical: Consensus Committee Dataset
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Cohort definitions are not those originally present and downloaded inside the study’s platform (LONI), but instead defined by a separate document (consensus committee analytic dataset) found inside the platform (as explained above).</p>
+</div>
+</div>
+<section id="biomarker-and-omics-data" class="level3" data-number="3.8.1">
+<h3 data-number="3.8.1" class="anchored" data-anchor-id="biomarker-and-omics-data"><span class="header-section-number">3.8.1</span> Biomarker and Omics Data</h3>
+<p>Much of biomarker and omics data from the study comes from proposed projects. It is important to carefully read each project’s documentation in order to better understand the structure and methods that were employed in the data of your interest. An overview of these projects can be found in <a href="https://www.ppmi-info.org/ongoing-specimen-analysis">Ongoing Specimen Analysis</a> and the methodology for each one, inside LONI.</p>
+</section>
+<section id="duplicate-entries---pdstate-variable" class="level3" data-number="3.8.2">
+<h3 data-number="3.8.2" class="anchored" data-anchor-id="duplicate-entries---pdstate-variable"><span class="header-section-number">3.8.2</span> Duplicate Entries - PDSTATE Variable</h3>
+<p>Some participants have duplicate entries for the same study visit that are dependent upon the participant’s last dose of dopaminergic therapy (DT), which is defined as levodopa and/or dopamine agonists. The variable that determines this is called <strong>“PDSTATE”</strong> and is present in the MDS-UPDRS III questionnaire.</p>
+<ul>
+<li><strong>OFF state</strong>: defined in the PPMI protocol as more than 6 hours after the last dose of DT</li>
+<li><strong>ON state</strong>: approximately one hour after the last dose of DT</li>
+</ul>
+</section>
+<section id="screening-vs.-baseline-visits" class="level3" data-number="3.8.3">
+<h3 data-number="3.8.3" class="anchored" data-anchor-id="screening-vs.-baseline-visits"><span class="header-section-number">3.8.3</span> Screening vs.&nbsp;Baseline Visits</h3>
+<p>There is a screening visit and a baseline visit - occasionally there is a datapoint that was taken at one or the other, so it is worth checking both visits. For example, blood cell counts were taken at the screening visit and not the baseline visit, and then at subsequent yearly visits.</p>
+</section>
+</section>
+<section id="sec-ppmi-updates" class="level2" data-number="3.9">
+<h2 data-number="3.9" class="anchored" data-anchor-id="sec-ppmi-updates"><span class="header-section-number">3.9</span> Updates</h2>
+<p>The study data updates regularly monthly as new participants are enrolled and participants already in follow-up attend study visits.</p>
+<ul>
+<li><strong>Clinical database entries</strong>: transferred nightly to the database</li>
+<li><strong>Complete database update</strong>: conducted each Sunday</li>
+<li><strong>Imaging data</strong>: integrated into the database separately, on a monthly basis</li>
+<li><strong>Biomarker/omics projects</strong>: new specific updates are added depending on the conclusion of proposed projects that analyze patients’ biological and neuroimaging data</li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            // default icon
+            link.classList.add("external");
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./amp-pd.html" class="pagination-link" aria-label="AMP® PD">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">AMP® PD</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./gp2.html" class="pagination-link" aria-label="GP2">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">GP2</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/MJFF-ResearchCommunity/getting-started-PD-data/edit/main/ppmi.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/MJFF-ResearchCommunity/getting-started-PD-data/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
