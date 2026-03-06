@@ -1,0 +1,132 @@
+# AMP® PD {#sec-amp-pd}
+
+## Study Description {#sec-amp-pd-description}
+
+AMP® PD (the Accelerating Medicines Partnership Parkinson's Disease) program is a partnership between FNIH, NINDS, NIA, FDA, Abbvie, GSK, Pfizer, Sanofi, BMS, Verily, ASAP and MJFF that generates and consolidates data from eight unified cohorts (BioFIND, HBS, LBD, LCC, PDBP, PPMI, STEADY-PD3 and SURE-PD3).
+
+Data was generated using standardized technology and centrally harmonized and quality controlled. All data was generated from samples collected under similar protocols. This data harmonization process and single data use policy facilitates and simplifies cross-cohort analysis.
+
+::: {.callout-tip}
+## Data Harmonization
+For more information on the data harmonization process, visit the data tab of the [AMP-PD website](https://amp-pd.org/).
+:::
+
+### Summary Data Dashboard
+
+AMP-PD's Summary Data Dashboard gives an overview of the various cohorts and provides an interactive way for users to see total participant counts for each of the cohorts of interest and what data types are available for the various cohorts. Using this dashboard, users can see there are 1,608 total participants from PDBP and 1,977 total participants from PPMI.
+
+### Participant Categories
+
+All samples are categorized into various PD categories. Here are the total number of participants with whole genome sequencing (WGS):
+
+| Enrollment Type | WGS Totals |
+|----------------|-----------|
+| PD with Known Mutations | 1,483 |
+| PD with No Known Mutations | 1,892 |
+| Healthy Control with Known Mutations | 1,640 |
+| Healthy Control with No Known Mutations | 2,554 |
+| Other Diagnosis with Known Mutations | 1,490 |
+| Other Diagnosis with No Known Mutation | 1,416 |
+
+## Study Data Features {#sec-amp-pd-features}
+
+### AMP-PD Harmonized Data
+
+**Clinical Data/Measurements**
+
+- **Clinical Data**
+  - Demographic
+  - Enrollment
+  - Medical History
+  - MDS-UPDRS
+  - MoCA
+  - UPSIT
+
+**Transcriptomic Data**
+
+- RNASeq from whole blood
+- Illumina Novaseq sequencing
+- Gencode v29 reference
+
+**Genomic Data**
+
+- Whole Genome Sequencing from whole blood
+- Illumina XTen sequencing
+- Human Genome hg38 reference
+
+**Proteomic Data**
+
+- Proteomics from CSF and plasma
+- Olink Explore targeted proteomics analysis
+- Mass Spectrometry based Untargeted proteomics
+
+**Single Nucleus Brain Data**
+
+- Clinical Data
+- Whole Genome Sequencing
+- Single nucleus RNA sequencing from 5 brain regions
+
+## How to Access Data {#sec-amp-pd-access}
+
+::: {.callout-important}
+## Access Requirements
+Users are encouraged to utilize cloud-based analyses to analyze the available data. With Terra on the frontend and Google Cloud Services (GCS) on the backend, users can utilize Terra workspaces as examples to build their own analysis scripts in R or Python.
+:::
+
+### Step-by-Step Access Process
+
+1. [AMP PD Access Request Form](https://amp-pd.org/access-request)
+2. [Setting up a Google Account](https://amp-pd.org/google-account)
+3. [Setting up 2-Step Verification](https://amp-pd.org/2-step-verification)
+4. [Requirements for accessing genomics data](https://amp-pd.org/genomics-requirements)
+5. [Full AMP PD Application Submission and Review Process](https://amp-pd.org/application-process)
+
+## Intended Data Uses {#sec-amp-pd-uses}
+
+AMP PD aims to identify and validate diagnostic, prognostic, and progression biomarkers, with the goal of improving clinical trial design and contributing to the identification of new pathways for therapeutic developments.
+
+With the many types of clinical and genetic data standardized across multiple cohorts, including longitudinal data, this is a great resource for:
+
+- Combining different data types
+- Leveraging thousands of data points
+- Validating hypotheses across cohorts
+
+## Data Set Strengths {#sec-amp-pd-strengths}
+
+1. **Data harmonization and standardization** across multiple, well characterized cohorts - large sample sizes with a reduction in batch effects
+
+2. **Standardized assays** on thousands of existing biosamples, incorporating existing longitudinal clinical data
+
+3. **Multiple data types** paired with clinical data, including transcriptomics, proteomics, whole genome sequencing, and post-mortem tissue sequencing. All of this can lend itself to powerful analyses for researchers.
+
+4. **Longitudinal data** - AMP PD proteomic, transcriptomic, post-mortem sequencing, and clinical data contains longitudinal data, so scientists can use this data to do more complex time course analyses.
+
+## Data Set Limitations {#sec-amp-pd-limitations}
+
+1. Not all samples that have clinical data and WGS data have transcriptomics or proteomics data; there is a global inventory table that will highlight overlapping participant IDs across the data types
+
+## Pre-Existing Documentation/FAQs {#sec-amp-pd-docs}
+
+- [AMP-PD Website](https://amp-pd.org/)
+- [AMP-PD in Terra](https://terra.amp-pd.org/)
+- [AMP-PD FAQs](https://amp-pd.org/faqs)
+- **Study Contact**: [ACT@amp-pd.org](mailto:ACT@amp-pd.org)
+
+## Tips and Dataset Considerations {#sec-amp-pd-tips}
+
+::: {.callout-tip}
+## Working with AMP-PD Data
+This data set is harmonized with example cloud-based notebooks to help get users started. The backend is GCS and users are able to download the data directly using the requester pays bucket. However, because the intended use is for users to use the data through Terra, it is a bit difficult to navigate directly to GCS and download the data.
+:::
+
+### Why Access Data Through AMP-PD?
+
+You might ask yourself - why access data through AMP-PD when I can go directly to a specific cohort data set, such as PPMI data from LONI?
+
+**Answer**: AMP PD is a harmonized data set consisting of unified cohorts. What does this mean for a researcher? There are higher numbers of samples, because the cohorts are unified and harmonized into a cohesive data set for each omics type.
+
+Yes, researchers can directly get data from one cohort, but if you want to use data from multiple cohorts to increase the number of samples in your analysis, AMP PD data would be a good way to do that.
+
+## Updates {#sec-amp-pd-updates}
+
+The [AMP-PD news and updates tab](https://amp-pd.org/news) includes release notes for recent releases.

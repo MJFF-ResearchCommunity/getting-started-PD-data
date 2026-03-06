@@ -1,0 +1,143 @@
+# Additional Resources {#sec-references .unnumbered}
+
+This section provides additional resources and information for working with Parkinson's disease datasets.
+
+## Dataset-Specific Resources
+
+### AMP PD
+
+- [AMP-PD Official Website](https://amp-pd.org/)
+- [AMP-PD in Terra](https://terra.amp-pd.org/)
+- [AMP-PD FAQs](https://amp-pd.org/faqs)
+- [AMP-PD News and Updates](https://amp-pd.org/news)
+- **Contact**: [ACT@amp-pd.org](mailto:ACT@amp-pd.org)
+
+### PPMI
+
+- [PPMI Official Website](https://www.ppmi-info.org/)
+- [PPMI Data Dashboard](https://www.ppmi-info.org/data-dashboard)
+- [PPMI Data User Guide](https://www.ppmi-info.org/data-user-guide)
+- [PPMI Study FAQs](https://www.ppmi-info.org/faqs)
+- [Ongoing Specimen Analysis](https://www.ppmi-info.org/ongoing-specimen-analysis)
+- [PPMI Specimen Dashboard](https://www.ppmi-info.org/specimen-dashboard)
+- [LONI Data Access Platform](https://ida.loni.usc.edu/)
+- **Contact**: [ppmi@michaeljfox.org](mailto:ppmi@michaeljfox.org)
+- [Contact Form](https://www.ppmi-info.org/contact/contact_us)
+
+### GP2
+
+- [GP2 Official Website](https://gp2.org/)
+- [GP2 Blog](https://gp2.org/blog/)
+- [GP2 Cohort Dashboard](https://gp2.org/cohort-dashboard/)
+- [GP2 Data Repository](https://gp2.org/data-repository/)
+- [GP2 Training Resources](https://gp2.org/training/)
+- [GP2 Code Repositories (GitHub)](https://github.com/GP2code)
+- [GP2 Monogenic Resource Map](https://gp2.org/monogenic-map/)
+- [GP2 Monogenic Portal](https://gp2.org/monogenic-portal/)
+- [GP2 Opportunities Page](https://gp2.org/opportunities/)
+- [GP2 Updates](https://gp2.org/updates/)
+- **Contact**: [cohort@gp2.org](mailto:cohort@gp2.org)
+
+### FOX INSIGHT
+
+- [Fox Insight Official Website](https://foxinsight.michaeljfox.org/)
+- [Fox DEN Data Platform](https://foxden.michaeljfox.org/)
+- [Fox DEN Getting Started Video](https://foxden.michaeljfox.org/getting-started)
+- [Fox DEN Variable Explorer](https://foxden.michaeljfox.org/variable-explorer)
+- [Fox Insight Resources](https://foxden.michaeljfox.org/resources)
+- [Fox Insight FAQs](https://foxinsight.michaeljfox.org/faqs)
+- [Fox Insight Data Descriptor Publication](https://doi.org/10.1038/s41597-020-0401-2)
+- **Contact**: [foxden@michaeljfox.org](mailto:foxden@michaeljfox.org)
+
+## General Parkinson's Disease Resources
+
+### Michael J. Fox Foundation
+
+- [MJFF Official Website](https://www.michaeljfox.org/)
+- [MJFF Research Tools](https://www.michaeljfox.org/research-tools)
+- **Research Community**: [researchcommunity@michaeljfox.org](mailto:researchcommunity@michaeljfox.org)
+
+### Cloud Computing Platforms
+
+- [Terra Platform](https://terra.bio/) - Cloud platform for biomedical research
+- [Verily Viewpoint Workbench](https://verily.com/solutions/workbench/) - GDPR-compliant analysis platform
+- [Google Cloud Platform](https://cloud.google.com/) - Backend infrastructure for AMP-PD and GP2
+
+## Key Publications
+
+### FOX INSIGHT
+
+- Smolensky, L., Amondikar, N., Crawford, K. et al. Fox Insight collects online, longitudinal patient-reported outcomes and genetic data on Parkinson's disease. *Sci Data* 7, 67 (2020). [https://doi.org/10.1038/s41597-020-0401-2](https://doi.org/10.1038/s41597-020-0401-2)
+
+## Community and Support
+
+### Data Community of Practice
+
+This guide is maintained by the Data Community of Practice, a collaborative effort to improve data accessibility and usability in Parkinson's disease research.
+
+### Contributing to This Guide
+
+We welcome contributions to keep this guide current and comprehensive!
+
+::: {.callout-note}
+## How to Contribute
+
+If you would like to:
+
+- **Add information** about a new dataset
+- **Update** existing content
+- **Correct** errors or outdated information
+- **Suggest improvements** to the guide
+
+Please contact: [researchcommunity@michaeljfox.org](mailto:researchcommunity@michaeljfox.org)
+:::
+
+## Technical Resources
+
+### Data Analysis Tools
+
+- **R Statistical Software**: [https://www.r-project.org/](https://www.r-project.org/)
+- **Python**: [https://www.python.org/](https://www.python.org/)
+- **Bioconductor**: [https://www.bioconductor.org/](https://www.bioconductor.org/)
+- **Jupyter Notebooks**: [https://jupyter.org/](https://jupyter.org/)
+
+### Version Control and Collaboration
+
+- **GitHub**: [https://github.com/](https://github.com/)
+- **Git**: [https://git-scm.com/](https://git-scm.com/)
+
+### Quarto Publishing
+
+This web book was created using Quarto, an open-source scientific and technical publishing system.
+
+- **Quarto**: [https://quarto.org/](https://quarto.org/)
+- **Quarto Books**: [https://quarto.org/docs/books/](https://quarto.org/docs/books/)
+
+## Citing This Guide
+
+If you use this guide in your research or reference it in publications, please cite as:
+
+> Alosco, M., Hutchins, E., Saffie Awad, P., Dardov, V., Gottesman, J., Iwaki, H., Reyes-Perez, P., Teixeira dos Santos, D., & Sanghvi, M. (2024). *Getting Started With Parkinson's Disease Data* (Version 1.0). Data Community of Practice, The Michael J. Fox Foundation for Parkinson's Research.
+
+## License
+
+This work is licensed under a Creative Commons Attribution 4.0 International License (CC BY 4.0).
+
+You are free to:
+
+- **Share** — copy and redistribute the material in any medium or format
+- **Adapt** — remix, transform, and build upon the material for any purpose, even commercially
+
+Under the following terms:
+
+- **Attribution** — You must give appropriate credit, provide a link to the license, and indicate if changes were made
+
+## Acknowledgements
+
+This guide was created with contributions from the Data Community of Practice and is powered by The Michael J. Fox Foundation for Parkinson's Research.
+
+We thank all the researchers, clinicians, and participants who contribute to these valuable datasets and make Parkinson's disease research possible.
+
+---
+
+**Version 1.0** | May 2024
